@@ -36,3 +36,8 @@ def sign_in(request):
 
 def lesson(request):
     return render(request, 'main/dars.html')
+
+
+
+def hello(request):
+    pass
