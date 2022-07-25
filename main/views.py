@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from main.models import *
 
 def index(requesrt):
     return render(requesrt, 'main/index.html')
@@ -14,7 +14,12 @@ def course_lesson(request):
 
 
 def rayteng(request):
-    return render(request, 'main/natija.html')
+    student = Team_bola.objects.all()
+
+    ctx={
+        "student":student
+    }
+    return render(request, 'main/natija.html',ctx)
 
 
 def our_team(request):
