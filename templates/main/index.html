@@ -1,4 +1,5 @@
 {% load static %}
+{% include 'main/navbar.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +28,7 @@
 
 
 <div class="container">
-    {% include 'main/navbar.html' %}
+
 
     <div class="row" style="margin-top: 30px">
         <div class="col-6" style="margin-top: 33px">
@@ -170,89 +171,42 @@
                 ></a>
             </div>
             <div class="row">
-                <div class="col-4">
-                    <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 23rem;height: 29rem;"
-                         class=" mt-5">
-                        <img style="margin-left: 7rem;margin-top: 2rem;" src="{% static 'images/Mobile%20Bootcamp.png' %}">
-                        <div style="margin-top: 2rem;text-align: center">
-                            <strong><h4 style=" margin-top: -9px"><b>Mobile Bootcamp</b></h4>
-                            </strong>
-                        </div>
-                        <p class="lead h6 text-muted mt-2" style="text-align: center;font-size: 13px"><b>
-                            Consectetur adipiscing elit. Potenti in cras etiam nunc. Et <br> diam augue turpis
-                            curabitur et
-                            vitae at et, sit. <br>Purus, vel vel nulla faucibus.</b>
-                        </p>
-                        <div class="mt-4" style="text-align: center">
-                            <h6 class="text-muted mt-2">Boshlanish kuni: <a style="color: #0076F5;">16.01.2022</a>
-                            </h6>
-                            <h6 class="text-muted mt-2">Qolgan joylar: <a style="color: #0076F5;">8 ta</a></h6>
-                            <button style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 11rem;border-radius: 9px;"
-                                    type="button"
-                                    class="btn btn-outline-primary mt-3">Batafsil
-                            </button>
-                        </div>
+                {% for i in course %}
+                    <div class="col-4 ml-4">
+                        <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 23rem;height: 29rem;"
+                             class=" mt-5">
+                            <img style="margin-left: 7rem;margin-top: 2rem;"
+                                 src="{% static 'images/Mobile%20Bootcamp.png' %}">
+                            <div style="margin-top: 2rem;text-align: center">
+                                <strong><h4 style=" margin-top: -9px"><b>{{ i.name }}</b></h4>
+                                </strong>
+                            </div>
+                            <p class="lead h6 text-muted mt-2" style="text-align: center;font-size: 13px"><b>
+                                {{ i.text }}</b>
+                            </p>
+                            <div class="mt-4" style="text-align: center">
+                                <h6 class="text-muted mt-2">Boshlanish kuni: <a
+                                        style="color: #0076F5;">{{ i.course_data }}</a>
+                                </h6>
+                                <h6 class="text-muted mt-2">Qolgan joylar: <a style="color: #0076F5;">{{ i.joy_qolgan }}</a>
+                                </h6>
+                                <a class="nav-link" href="{% url 'course' %}">
+                                    <button style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 11rem;border-radius: 9px;"
+                                            type="button"
+                                            class="btn btn-outline-primary mt-3">Batafsil
+                                    </button>
+                                </a>
+                            </div>
 
 
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 23rem;height: 29rem;margin-left: 1rem;"
-                         class=" mt-5">
-                        <img style="margin-top: 2rem;;margin-left: 7rem" src="{% static 'images/Ellipse%206.png' %}">
-                        <div style="margin-top: 2rem;text-align: center">
-                            <strong><h4 style=" margin-top: -9px"><b>Frontend Bootcamp</b></h4>
-                            </strong>
-                        </div>
-                        <p class="lead h6 text-muted mt-2" style="text-align: center;font-size: 13px"><b>
-                            Consectetur adipiscing elit. Potenti in cras etiam nunc. Et <br> diam augue turpis
-                            curabitur et
-                            vitae at et, sit. <br>Purus, vel vel nulla faucibus.</b>
-                        </p>
-                        <div class="mt-4" style="text-align: center">
-                            <h6 class="text-muted mt-2">Boshlanish kuni: <a style="color: #0076F5;">16.01.2022</a>
-                            </h6>
-                            <h6 class="text-muted mt-2">Qolgan joylar: <a style="color: #0076F5;">8 ta</a></h6>
-                            <button style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 11rem;border-radius: 9px;"
-                                    type="button"
-                                    class="btn btn-outline-primary mt-3">Batafsil
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 23rem;height: 29rem;margin-left: 2rem;"
-                         class=" mt-5">
-                        <img style="margin-top: 2rem;margin-left: 7rem" src="{% static 'images/Ellipse%207.png' %}">
-                        <div style="margin-top: 2rem;text-align: center">
-                            <strong><h4 style=" margin-top: -9px"><b>Backend Bootcamp</b></h4>
-                            </strong>
-                        </div>
-                        <p class="lead h6 text-muted mt-2" style="text-align: center;font-size: 13px"><b>
-                            Consectetur adipiscing elit. Potenti in cras etiam nunc. Et <br> diam augue turpis
-                            curabitur et
-                            vitae at et, sit. <br>Purus, vel vel nulla faucibus.</b>
-                        </p>
-                        <div class="mt-4" style="text-align: center">
-                            <h6 class="text-muted mt-2">Boshlanish kuni: <a style="color: #0076F5;">16.01.2022</a>
-                            </h6>
-                            <h6 class="text-muted mt-2">Qolgan joylar: <a style="color: #0076F5;">8 ta</a></h6>
-                            <button style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 11rem;border-radius: 9px;"
-                                    type="button"
-                                    class="btn btn-outline-primary mt-3">Batafsil
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-
-
+                {% endfor %}
             </div>
         </div>
     </div>
 
-    <h1 class="display-5 mt-5"><b>Biz haqimizda</b></h1>
+    <h1 class="display-5 mt-5"><b>Bepul darsliklar</b></h1>
 
     <div class="container" style="margin-left: 65px">
         <div class="row mt-5">

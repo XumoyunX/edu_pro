@@ -2,11 +2,19 @@ from django.shortcuts import render
 from main.models import *
 
 def index(requesrt):
-    return render(requesrt, 'main/index.html')
+    course = Coueres.objects.all()
+    ctx = {
+        "course": course
+    }
+    return render(requesrt, 'main/index.html',ctx)
 
 
 def course(requesrt):
-    return render(requesrt, 'main/kurslar.html')
+    course=Coueres.objects.all()
+    ctx={
+        "course":course
+    }
+    return render(requesrt, 'main/kurslar.html',ctx)
 
 
 def course_lesson(request):
