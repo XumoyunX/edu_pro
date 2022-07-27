@@ -29,7 +29,7 @@ class Coueres_price(models.Model):
 
 class Coueres(models.Model):
     coueres_price = models.ForeignKey(Coueres_price, null=True, on_delete=models.CASCADE)
-    user = models.ForeignKey('client.User', null=True, on_delete=models.CASCADE)
+    user = models.ForeignKey('accounts.User', null=True, on_delete=models.CASCADE)
     name = models.CharField(max_length=250)
     text = models.TextField()
     img = models.ImageField(upload_to='images/')

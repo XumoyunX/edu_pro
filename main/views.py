@@ -10,6 +10,7 @@ def course(requesrt):
 
 
 def course_lesson(request):
+
     return render(request, 'main/kurs_dars.html')
 
 
