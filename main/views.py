@@ -15,10 +15,19 @@ def course_lesson(request):
 
 def rayteng(request):
     student = Team_bola.objects.all()
+    b = 5
+    a = b // 2 * 2
+    d = b - a
+    if d == 0:
+        print("juft")
+    else:
+        print("toq")
 
     ctx={
-        "student":student
+        "student":student,
+        'd':d
     }
+
     return render(request, 'main/natija.html',ctx)
 
 

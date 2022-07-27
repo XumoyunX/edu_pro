@@ -37,17 +37,27 @@
                     uslubida ta’lim <br> beruvchi <span style="color: #0076F5"> markaz</span></p>
             </div>
             <div style="margin-top: 2rem;">
+                <div class="row">
+                    <div class="col-6 mt-2">
+                        <a href="{% url 'course' %}">
+                            <button type="button"
+                                    style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);margin-left: 1rem;width: 10rem;"
+                                    type="button" class="btn btn-outline-primary">
+                                Kurslarimiz
+                            </button>
+                        </a>
+                    </div>
+                    <div class="col-6">
 
-                <button type="button"
-                        style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);margin-left: 1rem;width: 10rem;"
-                        type="button" class="btn btn-outline-primary">
-                    Kurslarimiz
-                </button>
+                        <a class="nav-link" href="#aloqa">
+                            <button type="button"
+                                    style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 10rem; margin-left: -4rem"
+                                    type="button" class="btn btn-outline-primary">Aloqa
+                            </button>
+                        </a>
+                    </div>
+                </div>
 
-                <button type="button"
-                        style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 10rem; margin-left: 3rem"
-                        type="button" class="btn btn-outline-primary">Aloqa
-                </button>
             </div>
         </div>
         <div class="col-6" style="margin-top: -80px">
@@ -173,7 +183,8 @@
                 <div class="col-4">
                     <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 23rem;height: 29rem;"
                          class=" mt-5">
-                        <img style="margin-left: 7rem;margin-top: 2rem;" src="{% static 'images/Mobile%20Bootcamp.png' %}">
+                        <img style="margin-left: 7rem;margin-top: 2rem;"
+                             src="{% static 'images/Mobile%20Bootcamp.png' %}">
                         <div style="margin-top: 2rem;text-align: center">
                             <strong><h4 style=" margin-top: -9px"><b>Mobile Bootcamp</b></h4>
                             </strong>
@@ -493,7 +504,8 @@
 
     </div>
 
-    <div style="border-top: 1.5px solid #edeceb;border-bottom: 1.5px solid #edeceb;height: 300px;margin-top: 250px">
+    <div id="aloqa"
+         style="border-top: 1.5px solid #edeceb;border-bottom: 1.5px solid #edeceb;height: 300px;margin-top: 250px">
         <div class="container">
             <div class="row mt-5">
                 <div class="col-4">
@@ -545,7 +557,7 @@
                     <p style="font-size: 16px">
                         Join our mailing list. We write rarely, but only <br> the best content
                     </p>
-                    <div class="form-group">
+                    <div id="aloqa" class="form-group">
                         <input type="email" class="form-control" id="exampleFormControlInput6"
                                placeholder="Email manzilingiz"
                                style="width: 321px;height: 48px; border-radius: 8px;border: 1px solid #edeceb">
