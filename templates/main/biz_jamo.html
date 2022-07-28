@@ -28,139 +28,66 @@
         <br> <span style="color: #0076F5"> tajribali </span> mentorlar dars beradi</h1>
 </div>
 <!--kart boshlandi -1-->
-<div class="box-card" style="
+
+
+{% for tim in student %}
+    <div class="box-card" style="
     width: 55rem;
-    height: 434px;
+    height: 480px;
     margin-left: 17rem;
     box-shadow: 0px 0px 30px -18px;margin-top: 96px">
-    <img style="margin-top: 82px;margin-left: 104px" src="{% static 'images/yuz1.png' %}" alt="">
-    <div style="margin-left: 21rem;margin-top: -9.3rem;font-size: 19px;">
-        <h3 style="font-size: 19px;">Frontend dasturchi </h3>
-        <h6 style="font-style: normal;color: #514D48;font-weight: 400;font-size: 16px;line-height: 26px;width: 440px;height: 5.8rem;margin-top: 19px">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sollicitudin netus in arcu eget nec id sit
-            morbi. Ut id sodales enim pretium, aliquam, eget pellentesque. In arcu, ornare aenean
-            arcu, eget. Ornare aliquet sed morbi nibh quam sed vitae placerat ornare. Volutpat ut ut justo, vulputate
-            vel auctor. Hac laoreet imperdiet cursus blandit luctus curabitur nec elit. Quis et ornare sit
-            viverran </h6>
-    </div>
-    <div style="margin-top: 3rem">
-        <h2 style="margin-left:5rem;font-size: 25px;">Sardorbek Muxtorov</h2>
-        <h3 style="margin-left: 7rem;margin-top: -8px;font-size: 19px;color: #514D48;font-family: 'Inter';font-style: normal;font-weight: 400;font-size: 19px;line-height: 28px;">
-            Frontend dasturchi</h3>
-        <div style="margin-left: 120px;margin-top: 1.5rem">
-            <a class="a" href=""><img src="{% static 'images/fesbook.png' %}" alt=""></a>
-            <a class="a"  href=""><img style="margin-left: 12px" src="{% static 'images/instagram.png' %}" alt=""></a>
-            <a class="a"  href=""><img style="margin-left: 12px" src="{% static 'images/youtube.png' %}" alt=""></a>
-            <a class="a"  href=""><img style="margin-left: 12px " src="{% static 'images/github.png' %}" alt=""></a>
+        <img class="rounded-circle"
+             style=" margin-top: 90px;margin-left: 104px;height: 9rem; width: 10rem; "
+             src="{{ tim.img.url }}" alt="">
+        <div style="margin-left: 21rem;margin-top: -9.3rem;font-size: 19px;">
+
+
         </div>
-    </div>
-    <div>
-        <div style="
+        <div style="margin-top: -2rem">
+            <div class="card mb-3" style= "max-width: 540px;border: 0px solid red;width: 900px;  margin: 0 0 0 320px; height: 50px;     background-color: #F5FAFF; ">
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p style="    width: 503px;" class="card-text">{{ tim.text }}</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 style="margin-left: 6rem;font-size: 25px;margin-top: 9rem">{{ tim.job }}</h2>
+            <h3 style="margin-left: 7.5rem;font-size: 19px;color: #514D48;">{{ tim.sohasi }}</h3>
+            <div style="margin-left: 120px;margin-top: 1.5rem">
+                <a class="a" href=""><img src="{% static 'images/fesbook.png' %}" alt=""></a>
+                <a class="a" style="margin-left: 0.5rem" href=""><img src="{% static 'images/instagram.png' %}" alt=""></a>
+                <a class="a" style="margin-left: 0.5rem" href=""><img src="{% static 'images/youtube.png' %}"
+                                                                      alt=""></a>
+                <a class="a" style="margin-left: 0.5rem" href=""><img src="{% static 'images/github.png' %}" alt=""></a>
+            </div>
+        </div>
+        <div>
+            <div style="
     margin-left: 20rem;
     margin-top: -2.5rem;">
-            <button type="button" class="btn btn-link">#html</button>
-            <button type="button" class="btn btn-link">#css</button>
-            <button type="button" class="btn btn-link">#bootstrap</button>
-            <button type="button" class="btn btn-link">#sass</button>
-            <button type="button" class="btn btn-link">#javascript</button>
-            <button type="button" class="btn btn-link">#reactjs</button>
-            <button type="button" class="btn btn-link">#angular</button>
-            <button type="button" class="btn btn-link">#nodejs</button>
-            <button type="button" class="btn btn-link">#github</button>
+                <button type="button" class="btn btn-link">#html</button>
+                <button type="button" class="btn btn-link">#css</button>
+                <button type="button" class="btn btn-link">#bootstrap</button>
+                <button type="button" class="btn btn-link">#sass</button>
+                <button type="button" class="btn btn-link">#javascript</button>
+                <button type="button" class="btn btn-link">#reactjs</button>
+                <button type="button" class="btn btn-link">#angular</button>
+                <button type="button" class="btn btn-link">#nodejs</button>
+                <button type="button" class="btn btn-link">#github</button>
+            </div>
         </div>
     </div>
-</div>
+{% endfor %}
 <!--kart tugadi-1-->
 
 
-<!--kart boshlandi -2-->
-<div class="box-card" style="border: 0px solid black;
-    width: 55rem;
-    height: 434px;
-    margin-left: 17rem;
-    box-shadow: 0px 0px 30px -18px;margin-top: 96px">
-    <img style="margin-top: 82px;margin-left: 104px" src="{% static 'images/yuz2.png' %}" alt="">
-    <div style="margin-left: 21rem;margin-top: -9.3rem;font-size: 19px;">
-        <h3 style="font-size: 19px;">Mobile dasturchi </h3>
-        <h6 style="font-style: normal;color: #514D48;font-weight: 400;font-size: 16px;line-height: 26px;width: 440px;height: 5.8rem;margin-top: 19px">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sollicitudin netus in arcu eget nec id sit
-            morbi. Ut id sodales enim pretium, aliquam, eget pellentesque. In arcu, ornare aenean
-            arcu, eget. Ornare aliquet sed morbi nibh quam sed vitae placerat ornare. Volutpat ut ut justo,
-            vulputate
-            vel auctor. Hac laoreet imperdiet cursus blandit luctus curabitur nec elit. Quis et ornare sit
-            viverran </h6>
-    </div>
-    <div style="margin-top: 3rem">
-        <h2 style="margin-left:5rem;font-size: 25px;">Sardorbek Muxtorov</h2>
-        <h3 style="margin-left: 7rem;margin-top: -8px;font-size: 19px;color: #514D48;font-family: 'Inter';font-style: normal;font-weight: 400;font-size: 19px;line-height: 28px;">
-            Frontend dasturchi</h3>
-       <div style="margin-left: 120px;margin-top: 1.5rem">
-            <a class="a" href=""><img src="{% static 'images/fesbook.png' %}" alt=""></a>
-            <a class="a"  href=""><img style="margin-left: 12px" src="{% static 'images/instagram.png' %}" alt=""></a>
-            <a class="a"  href=""><img style="margin-left: 12px" src="{% static 'images/youtube.png' %}" alt=""></a>
-            <a class="a"  href=""><img style="margin-left: 12px " src="{% static 'images/github.png' %}" alt=""></a>
-        </div>
-    </div>
-    <div>
-        <div style="margin-left: 20rem;margin-top: -2.5rem;">
-            <button type="button" class="btn btn-link">#html</button>
-            <button type="button" class="btn btn-link">#css</button>
-            <button type="button" class="btn btn-link">#bootstrap</button>
-            <button type="button" class="btn btn-link">#sass</button>
-            <button type="button" class="btn btn-link">#javascript</button>
-            <button type="button" class="btn btn-link">#reactjs</button>
-            <button type="button" class="btn btn-link">#angular</button>
-            <button type="button" class="btn btn-link">#nodejs</button>
-            <button type="button" class="btn btn-link">#github</button>
-        </div>
-    </div>
-</div>
-<!--kart tugadi -2-->
 
 
-<!--kart boshlandi 3-->
 
-<div class="box-card" style="border: 0px solid black;
-    width: 55rem;
-    height: 434px;
-    margin-left: 17rem;
-    box-shadow: 0px 0px 30px -18px;margin-top: 96px">
-    <img style="margin-top: 82px;margin-left: 104px" src="{% static 'images/yuz3.png' %}" alt="">
-    <div style="margin-left: 21rem;margin-top: -9.3rem;font-size: 19px;">
-        <h3 style="font-size: 19px;">Frontend dasturchi </h3>
-        <h6 style="font-style: normal;color: #514D48;font-weight: 400;font-size: 16px;line-height: 26px;width: 440px;height: 5.8rem;margin-top: 19px">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sollicitudin netus in arcu eget nec id sit
-            morbi. Ut id sodales enim pretium, aliquam, eget pellentesque. In arcu, ornare aenean
-            arcu, eget. Ornare aliquet sed morbi nibh quam sed vitae placerat ornare. Volutpat ut ut justo,
-            vulputate
-            vel auctor. Hac laoreet imperdiet cursus blandit luctus curabitur nec elit. Quis et ornare sit
-            viverran </h6>
-    </div>
-    <div style="margin-top: 3rem">
-        <h2 style="margin-left:5rem;font-size: 25px;">Sardorbek Muxtorov</h2>
-        <h3 style="margin-left: 7rem;margin-top: -8px;font-size: 19px;color: #514D48;font-family: 'Inter';font-style: normal;font-weight: 400;font-size: 19px;line-height: 28px;">
-            Frontend dasturchi</h3>
-      <div style="margin-left: 120px;margin-top: 1.5rem">
-            <a class="a" href=""><img src="{% static 'images/fesbook.png' %}" alt=""></a>
-            <a class="a"  href=""><img style="margin-left: 12px" src="{% static 'images/instagram.png' %}" alt=""></a>
-            <a class="a"  href=""><img style="margin-left: 12px" src="{% static 'images/youtube.png' %}" alt=""></a>
-            <a class="a"  href=""><img style="margin-left: 12px " src="{% static 'images/github.png' %}" alt=""></a>
-        </div>
-    </div>
-    <div>
-        <div style="margin-left: 20rem;margin-top: -2.5rem;">
-            <button type="button" class="btn btn-link">#html</button>
-            <button type="button" class="btn btn-link">#css</button>
-            <button type="button" class="btn btn-link">#bootstrap</button>
-            <button type="button" class="btn btn-link">#sass</button>
-            <button type="button" class="btn btn-link">#javascript</button>
-            <button type="button" class="btn btn-link">#reactjs</button>
-            <button type="button" class="btn btn-link">#angular</button>
-            <button type="button" class="btn btn-link">#nodejs</button>
-            <button type="button" class="btn btn-link">#github</button>
-        </div>
-    </div>
-</div>
 
 
 

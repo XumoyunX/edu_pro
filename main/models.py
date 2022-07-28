@@ -7,6 +7,8 @@ from django.db import models
 
 
 class Team(models.Model):
+    img = models.ImageField(upload_to='images/')
+    sohasi = models.CharField(max_length=50)
     name = models.CharField(max_length=250)
     text = models.TextField()
     job = models.CharField(max_length=250)
@@ -55,3 +57,9 @@ class Team_bola(models.Model):
 
     def __str__(self):
         return self.name
+
+class Statika(models.Model):
+    kurslar_soni = models.IntegerField()
+    uquvchilar_soni = models.IntegerField()
+    ishga_joylashganlar = models.IntegerField()
+    mentorlar = models.IntegerField()

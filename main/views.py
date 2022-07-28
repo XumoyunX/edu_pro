@@ -2,7 +2,13 @@ from django.shortcuts import render
 from main.models import *
 
 def index(requesrt):
-    return render(requesrt, 'main/index.html')
+    statictika = Statika.objects.all()
+
+    ctx = {
+        "statictika": statictika
+
+    }
+    return render(requesrt, 'main/index.html', ctx)
 
 
 def course(requesrt):
@@ -22,8 +28,16 @@ def rayteng(request):
     return render(request, 'main/natija.html',ctx)
 
 
+
+
 def our_team(request):
-    return render(request, 'main/biz_jamo.html')
+    student = Team.objects.all()
+
+    ctx = {
+        "student": student
+    }
+
+    return render(request, 'main/biz_jamo.html', ctx)
 
 
 def sign_up(request):

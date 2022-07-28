@@ -36,44 +36,46 @@
             <div class="box"
                  style="width:450px;height: 585px;padding: 25px 20px;box-shadow: 0px 3px 31px -7px #d0d7df;border: none;border-radius: 15px;">
                 <h2 style="color:#0076F5;font-family: 'Fira Code',monospace">Ro'yhatdan o'tish</h2>
-                <h4 style="font-size:20px">Email manzilingiz</h4>
-                <form action="{% url 'sign_in' %}" method="post">
-                     {% csrf_token %}
-{#                    {{ form.as_p }}#}
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="id_email"
-                               placeholder="namuna@gmail.com" name="email"
-                               style="width: 100%;height: 48px; border-radius: 10px;border: 1px solid #edeceb;">
-                    </div>
-                    <h4 style="font-size:20px">Username</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="id_username"
-                               placeholder="Username" name="username"
-                               style="width: 100%;height: 48px; border-radius: 10px;border: 1px solid #edeceb;">
-                    </div>
-                    <h4 style="font-size:20px">Parolingiz</h4>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="id_password1"
-                               placeholder="Parol" name="password1" autocomplete="new-password"
-                               style="width: 100%;height: 48px; border-radius: 10px;border: 1px solid #edeceb;">
-                    </div>
-                    <h4 style="font-size:20px">Parolni tasdiqlang</h4>
-                    <div class="form-group">
-                        <input type="password2" name="password2" class="form-control" id="id_password2"
-                                autocomplete="new-password"
-                               placeholder="Parolni qayta kiriting"
-                               style="width: 100%;height: 48px; border-radius: 10px;border: 1px solid #edeceb;">
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            <span style="color:  #6C6660;font-size: 14px">Hamma shartlarga rozilik bildiraman</span></a></span>
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-primary mt-3"
-                            style="width:100%; box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Tasdiqlash
-                    </button>
+                <form action="{% url 'acounts:register' %}" method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" id="submit">Register</button>
                 </form>
+{#                <h4 style="font-size:20px">Username</h4>#}
+{#                <div class="form-group">#}
+{#                    {{ form.username }}#}
+{#                </div>#}
+{#                <h4 style="font-size:20px">Email manzilingiz</h4>#}
+{#                <div class="form-group">#}
+{#                    <span style="width: 100%;height: 48px; border-radius: 10px;border: 1px solid #edeceb;">#}
+{#                    {{   form.email }}</span>#}
+{#                    <input type="email" name="email" class="form-control" id="id_email" placeholder="namuna@gmail.com"#}
+{#                           style="width: 100%;height: 48px; border-radius: 10px;border: 1px solid #edeceb;">#}
+{#                </div>#}
+{#                <h4 style="font-size:20px">Parolingiz</h4>#}
+{#                <div class="form-group">#}
+{#                    {{ form.password1 }}#}
+{#                    <input type="email" class="form-control" id="exampleFormControlInput2"#}
+{#                           placeholder="Parol"#}
+{#                           style="width: 100%;height: 48px; border-radius: 10px;border: 1px solid #edeceb;">#}
+{#                </div>#}
+{#                <h4 style="font-size:20px">Parolni tasdiqlang</h4>#}
+{#                <div class="form-group">#}
+{#                    {{ form.password2 }}#}
+{#                    <input type="email" class="form-control" id="exampleFormControlInput3"#}
+{#                           placeholder="Parolni qayta kiriting"#}
+{#                           style="width: 100%;height: 48px; border-radius: 10px;border: 1px solid #edeceb;">#}
+{#                </div>#}
+{#                <div class="form-check">#}
+{#                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">#}
+{#                    <label class="form-check-label" for="defaultCheck1">#}
+{#                        <span style="color:  #6C6660;font-size: 14px">Hamma shartlarga rozilik bildiraman</span></a></span>#}
+{#                    </label>#}
+{#                </div>#}
+{#                <button type="submit" id="submit">Register</button>#}
+{#                <button type="button" id="submit" class="btn btn-primary mt-3"#}
+{#                        style="width:100%; box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Tasdiqlash#}
+{#                </button>#}
                 <div class="mt-3" style="text-align: center">
                     <p>yoki ijtimoiy tarmoqlar orqali ro'yhatdan o'ting</p>
                     <a href=""><img src="{% static 'images/Vector.jpg' %}" alt=""></a>
@@ -81,7 +83,7 @@
                     <a href=""><img src="{% static 'images/Vector%20(1).png' %}" alt="" style="margin-left: 20px"></a>
                 </div>
                 <div class="mt-3" style="text-align: center">
-                    <p>Ro'yhatdan o'tkanmisiz ? <a href="{% url 'sign_in' %}"
+                    <p>Ro'yhatdan o'tkanmisiz ? <a href="{% url 'acounts:login' %}"
                                                    style="text-decoration: none"><span>Kirish</span></a></p>
                 </div>
             </div>
