@@ -16,115 +16,110 @@
 
 {% include 'main/navbar.html' %}
 
-<div>
-    <h5 style="
-font-weight: 500;
-margin-top: 140px;
-margin-left: 126px;
-font-size: 38px;
 
-line-height: 52px;"><span style=" color: #0076F5;"> Frontend </span> Bootcamp <p style="margin-left: 25rem;margin-top: -3rem; font-size: 19px">Sardorbek Muxtorov</p></h5>
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            {% for i in vedio %}
+                <h1>{{ i.name }}</h1>
+                <div class="mt-4 ">
+                    <video width="100%" controls style="border-radius: 12px">
+                        <source src="{{ i.video.url }}" type="video/mp4">
+                    </video>
+                </div>
+            {% endfor %}
+        </div>
 
-    <p>
-
-        <iframe width="600" height="400" style="margin-left: 130px;border-radius: 15px" src="{% static 'img/dars_icons.jpg' %}" title="mp.4"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-    </p>
-
-    <div style="border: 0px solid black;margin-left: 48rem;margin-top: -25rem;height: 20rem;width: 30rem;">
-        <div style="font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 26px;">
-            <h6><a href=""><img src="{% static 'images/dars_icons.jpg' %}" alt=""></a> 1. Welcome to the Frontend development <p
-                    style="margin-left: 28rem;margin-top: -22.1px ">21:15</p></h6>
-            <h6><a href=""><img src="{% static 'images/dars_icons.jpg' %}" alt=""></a> 1. Welcome to the Frontend development <p
-                    style="margin-left: 28rem;margin-top: -22.1px ">21:15</p></h6>
-            <h6><a href=""><img src="{% static 'images/dars_icons.jpg' %}" alt=""></a> 1. Welcome to the Frontend development <p
-                    style="margin-left: 28rem;margin-top: -22.1px ">21:15</p></h6>
-            <h6><a href=""><img src="{% static 'images/dars_icons.jpg' %}" alt=""></a> 1. Welcome to the Frontend development <p
-                    style="margin-left: 28rem;margin-top: -22.1px ">21:15</p></h6>
-            <h6><a href=""><img src="{% static 'images/dars_icons.jpg' %}" alt=""></a> 1. Welcome to the Frontend development <p
-                    style="margin-left: 28rem;margin-top: -22.1px ">21:15</p></h6>
-            <h6><a href=""><img src="{% static 'images/dars_icons.jpg' %}" alt=""></a> 1. Welcome to the Frontend development <p
-                    style="margin-left: 28rem;margin-top: -22.1px ">21:15</p></h6>
-            <h6><a href=""><img src="{% static 'images/dars_icons.jpg' %}" alt=""></a> 1. Welcome to the Frontend development <p
-                    style="margin-left: 28rem;margin-top: -22.1px ">21:15</p></h6>
-            <h6><a href=""><img src="{% static 'images/dars_icons.jpg' %}" alt=""></a> 1. Welcome to the Frontend development <p
-                    style="margin-left: 28rem;margin-top: -22.1px ">21:15</p></h6>
-            <h6><a href=""><img src="{% static 'images/dars_icons.jpg' %}" alt=""></a> 1. Welcome to the Frontend development <p
-                    style="margin-left: 28rem;margin-top: -22.1px ">21:15</p></h6>
-            <h6><a href=""><img src="{% static 'images/dars_icons.jpg' %}" alt=""></a> 1. Welcome to the Frontend development <p
-                    style="margin-left: 28rem;margin-top: -22.1px ">21:15</p></h6>
-            <h6><a href=""><img src="{% static 'images/dars_icons.jpg' %}" alt=""></a> 1. Welcome to the Frontend development <p
-                    style="margin-left: 28rem;margin-top: -22.1px ">21:15</p></h6>
+        <div class="col-4">
+            {% for i in vedio %}
+                <a class="nav-link" href="{% url 'course_video' i.id %}">
+                    <h5>{{ i.name }}</h5>
+                </a>
+            {% endfor %}
         </div>
     </div>
-    <div>
-
+    <div class="mt-2">
+        <a href="">Kurs haqida</a>
+        <a href="">Resurslar</a>
     </div>
-    <div style="    margin-top: 5rem;
-    margin-left: 8rem;">
-    <button type="button" class="btn btn-link">Kurs haqida</button>
-    <button type="button" class="btn btn-link">Resurslar
-    </button>
-    </div>
-    <hr style="margin-top:-0.7rem; width: 37.4rem;margin-left: 134px">
 
-        <div  style=" ; border: 0px solid black;
-    width: 33rem;
-    margin-left: 8.1rem;
+    <div style=" ; border: 0px solid black;
+    width: 47rem;
     margin-top: 2rem;">
-            <h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique morbi orci id urna, egestas ultrices
-                integer scelerisque nisl. Semper purus amet, metus sed elit diam aliquet volutpat vivamus. Id et morbi
-                dolor
-                nec magna quis vestibulum pretium est. Volutpat, eget feugiat sed egestas vitae viverra proin vitae
-                netus.
-                Vulputate gravida aenean montes, amet eget massa orci imperdiet. At velit enim blandit bibendum praesent
-                dolor pharetra,<br><br><br> ligula ante. Elit suspendisse amet eu viverra nibh et odio tempus. Id a pellentesque sed
-                elit ornare mattis commodo ornare tristique. Urna, ut nisi in consectetur convallis nulla velit ante
-                ultrices. Tincidunt enim, quis nec urna quis aliquet est magna. Aenean ultricies eget elementum sit quis
-                nibh. Posuere sagittis sed dui leo. Neque, ut a amet, eget. Enim justo scelerisque donec dui fermentum
-                id
-                phasellus libero, magna. Non justo ultrices in venenatis nibh aliquet. <br><br><br> In viverra tellus, sed commodo
-                odio
-                sit justo egestas. Scelerisque suspendisse condimentum pellentesque sapien, eu mattis sed. Vel,
-                malesuada
-                enim phasellus cursus felis quis. Metus nulla eget ullamcorper ullamcorper. Quisque ac mauris varius
-                amet,
-                aenean. Etiam cursus vulputate mattis et felis molestie scelerisque. Egestas odio dignissim lacus vel ac
-                eget dictumst tortor morbi. Gravida ultrices vulputate id faucibus sed. <br><br><br> Scelerisque interdum dictumst
-                vel
-                vulputate. Ut pellentesque est iaculis felis odio facilisis. At pellentesque feugiat hendrerit sit. In
-                enim
-                at cursus vel. Lacus, pharetra neque lacus a semper interdum adipiscing arcu. Diam semper nulla ut
-                egestas.
-                Bibendum aliquet pellentesque habitant scelerisque. Ipsum mattis massa viverra vitae tincidunt arcu sem.
-                Turpis nunc sit feugiat dui, ipsum, massa fusce orci metus. Dolor porttitor auctor auctor lectus.
-                Feugiat
-                viverra tempus, scelerisque non amet non commodo. Enim vel massa elementum amet rutrum massa. Semper id
-                duis
-                etiam fringilla malesuada. <br><br><br> In ut facilisis mauris dictum nibh. Sed ut arcu sed eu tortor viverra sed.
-                Sollicitudin posuere tellus leo nulla. Ac bibendum consectetur ornare proin. Nulla pellentesque feugiat
-                sit
-                pharetra, quisque. Venenatis bibendum duis mauris eget faucibus lacus diam. Non egestas non ultrices
-                aenean
-                integer non massa. Mattis nunc condimentum mattis elementum. In vestibulum mattis feugiat id faucibus
-                phasellus orci. Sed neque, faucibus semper donec placerat mi diam morbi. Platea commodo cras arcu vitae
-                proin. Vulputate ullamcorper euismod tellus sit volutpat, varius. <br><br><br> Elementum tortor amet eget lorem
-                faucibus
-                et. Diam ullamcorper tempus faucibus enim vestibulum eget id. Volutpat felis aenean dignissim non proin
-                a
-                hac dolor amet. Sit adipiscing lacus aliquam vestibulum, fermentum vestibulum eu. Aenean leo blandit
-                accumsan, sit luctus elementum nibh. Dui sed velit sit vulputate a magna viverra elit. Eget et, vivamus
-                lectus porttitor quis. Senectus at ipsum viverra libero elementum. Purus feugiat enim id fermentum enim.
-                Integer quis amet gravida sed.</h6>
-        </div>
-
+        <h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique morbi orci id urna, egestas
+            ultrices
+            integer scelerisque nisl. Semper purus amet, metus sed elit diam aliquet volutpat vivamus. Id et
+            morbi
+            dolor
+            nec magna quis vestibulum pretium est. Volutpat, eget feugiat sed egestas vitae viverra proin vitae
+            netus.
+            Vulputate gravida aenean montes, amet eget massa orci imperdiet. At velit enim blandit bibendum
+            praesent
+            dolor pharetra,<br><br><br> ligula ante. Elit suspendisse amet eu viverra nibh et odio tempus. Id a
+            pellentesque sed
+            elit ornare mattis commodo ornare tristique. Urna, ut nisi in consectetur convallis nulla velit ante
+            ultrices. Tincidunt enim, quis nec urna quis aliquet est magna. Aenean ultricies eget elementum sit
+            quis
+            nibh. Posuere sagittis sed dui leo. Neque, ut a amet, eget. Enim justo scelerisque donec dui
+            fermentum
+            id
+            phasellus libero, magna. Non justo ultrices in venenatis nibh aliquet. <br><br><br> In viverra
+            tellus, sed
+            commodo
+            odio
+            sit justo egestas. Scelerisque suspendisse condimentum pellentesque sapien, eu mattis sed. Vel,
+            malesuada
+            enim phasellus cursus felis quis. Metus nulla eget ullamcorper ullamcorper. Quisque ac mauris varius
+            amet,
+            aenean. Etiam cursus vulputate mattis et felis molestie scelerisque. Egestas odio dignissim lacus
+            vel ac
+            eget dictumst tortor morbi. Gravida ultrices vulputate id faucibus sed. <br><br><br> Scelerisque
+            interdum
+            dictumst
+            vel
+            vulputate. Ut pellentesque est iaculis felis odio facilisis. At pellentesque feugiat hendrerit sit.
+            In
+            enim
+            at cursus vel. Lacus, pharetra neque lacus a semper interdum adipiscing arcu. Diam semper nulla ut
+            egestas.
+            Bibendum aliquet pellentesque habitant scelerisque. Ipsum mattis massa viverra vitae tincidunt arcu
+            sem.
+            Turpis nunc sit feugiat dui, ipsum, massa fusce orci metus. Dolor porttitor auctor auctor lectus.
+            Feugiat
+            viverra tempus, scelerisque non amet non commodo. Enim vel massa elementum amet rutrum massa. Semper
+            id
+            duis
+            etiam fringilla malesuada. <br><br><br> In ut facilisis mauris dictum nibh. Sed ut arcu sed eu
+            tortor
+            viverra sed.
+            Sollicitudin posuere tellus leo nulla. Ac bibendum consectetur ornare proin. Nulla pellentesque
+            feugiat
+            sit
+            pharetra, quisque. Venenatis bibendum duis mauris eget faucibus lacus diam. Non egestas non ultrices
+            aenean
+            integer non massa. Mattis nunc condimentum mattis elementum. In vestibulum mattis feugiat id
+            faucibus
+            phasellus orci. Sed neque, faucibus semper donec placerat mi diam morbi. Platea commodo cras arcu
+            vitae
+            proin. Vulputate ullamcorper euismod tellus sit volutpat, varius. <br><br><br> Elementum tortor amet
+            eget
+            lorem
+            faucibus
+            et. Diam ullamcorper tempus faucibus enim vestibulum eget id. Volutpat felis aenean dignissim non
+            proin
+            a
+            hac dolor amet. Sit adipiscing lacus aliquam vestibulum, fermentum vestibulum eu. Aenean leo blandit
+            accumsan, sit luctus elementum nibh. Dui sed velit sit vulputate a magna viverra elit. Eget et,
+            vivamus
+            lectus porttitor quis. Senectus at ipsum viverra libero elementum. Purus feugiat enim id fermentum
+            enim.
+            Integer quis amet gravida sed.</h6>
     </div>
+
+</div>
+
+
+</div>
 <br><br><br>
 <hr>
 <br>

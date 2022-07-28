@@ -57,304 +57,208 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="col-6" style="margin-top: -80px">
-                <div>
-                    <img style="box-shadow: 12px 12px 31px -7px rgb(0 0 0);border-radius: 31px;width: 10rem"
-                         src="{% static 'images/2.png' %}">
-                    <img style="    box-shadow: 12px 12px 31px -7px rgb(0 0 0);border-radius: 31px;margin-left: 1.5rem;width: 10rem;margin-top: 167px"
-                         src="{% static 'images/1.png' %}">
-                    <img style="    box-shadow: 12px 12px 31px -7px rgb(0 0 0); border-radius: 31px;margin-left: 1.5rem;width: 10rem"
-                         src="{% static 'images/3.png' %}">
-                </div>
-            </div>
 
-
+            </div>
         </div>
-        <h1 class="display-5 mt-5"><b style="margin-left: 1rem">Statistika</b></h1>
-        <div class="row">
-            {% for i in statictika %}
-                <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 16rem;height: 15rem;margin-left: 2rem;"
-                     class=" mt-5">
-                    <svg style="margin-left: 106px;margin-top: 3rem;" width="48" height="65" viewBox="0 0 48 65"
-                         fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M39 42.7349V63.3509C39.0001 63.6163 38.9297 63.877 38.7961 64.1063C38.6625 64.3356 38.4705 64.5254 38.2396 64.6562C38.0087 64.7871 37.7472 64.8543 37.4818 64.8511C37.2164 64.8479 36.9567 64.7743 36.729 64.6379L24 56.9999L11.271 64.6379C11.0431 64.7745 10.7831 64.8481 10.5174 64.8511C10.2518 64.8542 9.99012 64.7867 9.75913 64.6555C9.52814 64.5243 9.33614 64.3341 9.20276 64.1044C9.06938 63.8746 8.99941 63.6136 9 63.3479V42.7379C5.11844 39.6302 2.29798 35.3936 0.928377 30.6135C-0.441223 25.8335 -0.292332 20.7461 1.35447 16.0543C3.00128 11.3626 6.06469 7.29817 10.1213 4.42276C14.178 1.54735 19.0276 0.00292969 24 0.00292969C28.9724 0.00292969 33.822 1.54735 37.8786 4.42276C41.9353 7.29817 44.9987 11.3626 46.6455 16.0543C48.2923 20.7461 48.4412 25.8335 47.0716 30.6135C45.702 35.3936 42.8816 39.6302 39 42.7379V42.7349ZM24 41.9999C28.7739 41.9999 33.3523 40.1035 36.7279 36.7278C40.1036 33.3522 42 28.7738 42 23.9999C42 19.226 40.1036 14.6477 36.7279 11.272C33.3523 7.89635 28.7739 5.99992 24 5.99992C19.2261 5.99992 14.6477 7.89635 11.2721 11.272C7.89642 14.6477 6 19.226 6 23.9999C6 28.7738 7.89642 33.3522 11.2721 36.7278C14.6477 40.1035 19.2261 41.9999 24 41.9999ZM24 35.9999C20.8174 35.9999 17.7652 34.7356 15.5147 32.4852C13.2643 30.2348 12 27.1825 12 23.9999C12 20.8173 13.2643 17.7651 15.5147 15.5146C17.7652 13.2642 20.8174 11.9999 24 11.9999C27.1826 11.9999 30.2348 13.2642 32.4853 15.5146C34.7357 17.7651 36 20.8173 36 23.9999C36 27.1825 34.7357 30.2348 32.4853 32.4852C30.2348 34.7356 27.1826 35.9999 24 35.9999Z"
-                              fill="#0076F5"/>
-                    </svg>
-
-                    <div style="margin-left: 10rem;margin-top: 2rem;">
-                        <strong><h3 style="margin-left: -4rem; margin-top: -19px"><b>{{ i.kurslar_soni }}</b><b
-                                style="margin-left: 1rem">ta</b>
-                        </h3>
-                        </strong>
-                    </div>
-
-                    <p style="margin-left: 72px;" class="text-muted">
-                        Kurslarimiz soni
-                    </p>
-                </div>
-
-
-                <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 16rem;height: 15rem;margin-left:  2rem;"
-                     class=" mt-5">
-                    <svg style="margin-left: 106px;margin-top: 3rem;" width="48" height="63" viewBox="0 0 48 63"
-                         fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21 39.186V57H27V39.186C38.838 40.662 48 50.76 48 63H0C9.92216e-05 57.1542 2.13356 51.5093 6.00001 47.1248C9.86646 42.7402 15.2001 39.9174 21 39.186ZM24 36C14.055 36 6 27.945 6 18C6 8.055 14.055 0 24 0C33.945 0 42 8.055 42 18C42 27.945 33.945 36 24 36Z"
-                              fill="#0076F5"/>
-                    </svg>
-                    <div style="margin-left: 10rem;margin-top: 2rem;">
-                        <strong><h3 style="margin-left: -5rem; margin-top: -19px"><b>{{ i.uquvchilar_soni }} </b><b
-                                style="margin-left: 1rem">ta</b>
-                        </h3>
-                        </strong>
-                    </div>
-                    <p style="margin-left: 75px;" class="text-muted">
-                        O'quvchilar soni
-                    </p>
-                </div>
-                <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 16rem;height: 15rem;margin-left: 2rem;"
-                     class=" mt-5">
-                    <svg style="margin-left: 106px;margin-top: 3rem;" width="57" height="67" viewBox="0 0 57 67"
-                         fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24 39V63H0C0 56.6348 2.52856 50.5303 7.02944 46.0294C11.5303 41.5286 17.6348 39 24 39ZM42 61.5L33.183 66.135L34.866 56.319L27.735 49.365L37.593 47.931L42 39L46.41 47.931L56.265 49.365L49.134 56.319L50.814 66.135L42 61.5ZM24 36C14.055 36 6 27.945 6 18C6 8.055 14.055 0 24 0C33.945 0 42 8.055 42 18C42 27.945 33.945 36 24 36Z"
-                              fill="#0076F5"/>
-                    </svg>
-                    <div style="margin-left: 10rem;margin-top: 2rem;">
-                        <strong><h3 style="margin-left: -5rem; margin-top: -19px"><b>{{ i.ishga_joylashganlar }}</b><b
-                                style="margin-left: 1rem">ta</b>
-                        </h3>
-                        </strong>
-                    </div>
-                    <p style="margin-left: 58px;" class="text-muted">Ishga joylashganlar </p>
-                </div>
-                <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 16rem;height: 15rem;margin-left: 1rem;"
-                     class=" mt-5">
-                    <svg style="margin-left: 103px;margin-top: 3rem;" width="60" height="60" viewBox="0 0 60 60"
-                         fill="none"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M30 27C33.9782 27 37.7936 28.5804 40.6066 31.3934C43.4196 34.2064 45 38.0218 45 42V60H15V42C15 38.0218 16.5804 34.2064 19.3934 31.3934C22.2064 28.5804 26.0218 27 30 27ZM9.864 36.018C9.38657 37.6284 9.10455 39.2903 9.024 40.968L9 42V60H2.73951e-07V46.5C-0.000590421 43.9127 0.954085 41.4163 2.6809 39.4896C4.40772 37.5629 6.78509 36.3416 9.357 36.06L9.867 36.018H9.864ZM50.136 36.018C52.8057 36.1807 55.3128 37.3559 57.1458 39.3037C58.9788 41.2515 59.9996 43.8253 60 46.5V60H51V42C51 39.921 50.7 37.914 50.136 36.018ZM10.5 18C12.4891 18 14.3968 18.7902 15.8033 20.1967C17.2098 21.6032 18 23.5109 18 25.5C18 27.4891 17.2098 29.3968 15.8033 30.8033C14.3968 32.2098 12.4891 33 10.5 33C8.51088 33 6.60322 32.2098 5.1967 30.8033C3.79018 29.3968 3 27.4891 3 25.5C3 23.5109 3.79018 21.6032 5.1967 20.1967C6.60322 18.7902 8.51088 18 10.5 18ZM49.5 18C51.4891 18 53.3968 18.7902 54.8033 20.1967C56.2098 21.6032 57 23.5109 57 25.5C57 27.4891 56.2098 29.3968 54.8033 30.8033C53.3968 32.2098 51.4891 33 49.5 33C47.5109 33 45.6032 32.2098 44.1967 30.8033C42.7902 29.3968 42 27.4891 42 25.5C42 23.5109 42.7902 21.6032 44.1967 20.1967C45.6032 18.7902 47.5109 18 49.5 18ZM30 0C33.1826 0 36.2348 1.26428 38.4853 3.51472C40.7357 5.76516 42 8.8174 42 12C42 15.1826 40.7357 18.2348 38.4853 20.4853C36.2348 22.7357 33.1826 24 30 24C26.8174 24 23.7652 22.7357 21.5147 20.4853C19.2643 18.2348 18 15.1826 18 12C18 8.8174 19.2643 5.76516 21.5147 3.51472C23.7652 1.26428 26.8174 0 30 0Z"
-                              fill="#0076F5"/>
-                    </svg>
-                    <div style="margin-left: 10rem;margin-top: 2rem;">
-                        <strong><h3 style="margin-left: -52px; margin-top: -9px"><b>{{ i.mentorlar }}</b><b
-                                style="margin-left: 1rem">ta</b>
-                        </h3>
-                        </strong>
-                    </div>
-                    <p style="margin-left: 104px;" class="text-muted">
-                        Mentorlar
-                    </p>
-                </div>
-            {% endfor %}
+        <div class="col-6" style="margin-top: -80px">
+            <div>
+                <img style="box-shadow: 12px 12px 31px -7px rgb(0 0 0);border-radius: 31px;width: 10rem"
+                     src="{% static 'images/2.png' %}">
+                <img style="    box-shadow: 12px 12px 31px -7px rgb(0 0 0);border-radius: 31px;margin-left: 1.5rem;width: 10rem;margin-top: 167px"
+                     src="{% static 'images/1.png' %}">
+                <img style="    box-shadow: 12px 12px 31px -7px rgb(0 0 0); border-radius: 31px;margin-left: 1.5rem;width: 10rem"
+                     src="{% static 'images/3.png' %}">
+            </div>
         </div>
 
 
-        <h1 class="display-5 mt-5"><b style="margin-left: 1rem">Biz haqimizda</b></h1>
+    </div>
+    <h1 class="display-5 mt-5"><b style="margin-left: 1rem">Statistika</b></h1>
+    <div class="row">
+        {% for i in statictika %}
+            <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 16rem;height: 15rem;margin-left: 2rem;"
+                 class=" mt-5">
+                <svg style="margin-left: 106px;margin-top: 3rem;" width="48" height="65" viewBox="0 0 48 65" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M39 42.7349V63.3509C39.0001 63.6163 38.9297 63.877 38.7961 64.1063C38.6625 64.3356 38.4705 64.5254 38.2396 64.6562C38.0087 64.7871 37.7472 64.8543 37.4818 64.8511C37.2164 64.8479 36.9567 64.7743 36.729 64.6379L24 56.9999L11.271 64.6379C11.0431 64.7745 10.7831 64.8481 10.5174 64.8511C10.2518 64.8542 9.99012 64.7867 9.75913 64.6555C9.52814 64.5243 9.33614 64.3341 9.20276 64.1044C9.06938 63.8746 8.99941 63.6136 9 63.3479V42.7379C5.11844 39.6302 2.29798 35.3936 0.928377 30.6135C-0.441223 25.8335 -0.292332 20.7461 1.35447 16.0543C3.00128 11.3626 6.06469 7.29817 10.1213 4.42276C14.178 1.54735 19.0276 0.00292969 24 0.00292969C28.9724 0.00292969 33.822 1.54735 37.8786 4.42276C41.9353 7.29817 44.9987 11.3626 46.6455 16.0543C48.2923 20.7461 48.4412 25.8335 47.0716 30.6135C45.702 35.3936 42.8816 39.6302 39 42.7379V42.7349ZM24 41.9999C28.7739 41.9999 33.3523 40.1035 36.7279 36.7278C40.1036 33.3522 42 28.7738 42 23.9999C42 19.226 40.1036 14.6477 36.7279 11.272C33.3523 7.89635 28.7739 5.99992 24 5.99992C19.2261 5.99992 14.6477 7.89635 11.2721 11.272C7.89642 14.6477 6 19.226 6 23.9999C6 28.7738 7.89642 33.3522 11.2721 36.7278C14.6477 40.1035 19.2261 41.9999 24 41.9999ZM24 35.9999C20.8174 35.9999 17.7652 34.7356 15.5147 32.4852C13.2643 30.2348 12 27.1825 12 23.9999C12 20.8173 13.2643 17.7651 15.5147 15.5146C17.7652 13.2642 20.8174 11.9999 24 11.9999C27.1826 11.9999 30.2348 13.2642 32.4853 15.5146C34.7357 17.7651 36 20.8173 36 23.9999C36 27.1825 34.7357 30.2348 32.4853 32.4852C30.2348 34.7356 27.1826 35.9999 24 35.9999Z"
+                          fill="#0076F5"/>
+                </svg>
 
-        <div class="row" style="margin: 0">
-
-            <div class="col-6">
-                <img style="box-shadow: 4px 8px 16px rgb(78 84 90);width:230px;margin-top: 5rem;border-radius: 20px"
-                     src="{% static 'images/Mask.png' %}">
-                <img style="box-shadow: 4px 8px 16px rgb(78 84 90);width: 230px; border-radius: 20px;margin-left: 1rem"
-                     src="{% static 'images/Mas%20Group2.png' %}">
-            </div>
-            <div class="col-6">
-                <div style="margin-left: 2rem">
-                    <p class="h4 text">
-                        <b>Biz haqimizda faqat bizdan eshiting </b>
-                    </p>
-                    <p style="width: 27rem;" class="text-muted mt-4">
-                        Eget nam quisque lobortis ipsum sollicitudin. Ultricies morbi platea ac vel duis sed pretium.
-                        Vel ac magnis
-                        et
-                        lobortis adipiscing tempor, tincidunt urna. Morbi aenean natoque bibendum ut volutpat.
-                    </p>
-                    <p style="width: 27rem;" class="text-muted mt-4">
-                        Varius cras facilisi eleifend consequat libero sit nisl. Purus arcu viverra facilisi in. Sit
-                        consequat dolor
-                        lectus velit, neque, enim, fames laoreet. </p>
+                <div style="margin-left: 10rem;margin-top: 2rem;">
+                    <strong><h3 style="margin-left: -4rem; margin-top: -19px"><b>{{ i.kurslar_soni }}</b><b
+                            style="margin-left: 1rem">ta</b>
+                    </h3>
+                    </strong>
                 </div>
+
+                <p style="margin-left: 72px;" class="text-muted">
+                    Kurslarimiz soni
+                </p>
             </div>
 
+
+            <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 16rem;height: 15rem;margin-left:  2rem;"
+                 class=" mt-5">
+                <svg style="margin-left: 106px;margin-top: 3rem;" width="48" height="63" viewBox="0 0 48 63" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 39.186V57H27V39.186C38.838 40.662 48 50.76 48 63H0C9.92216e-05 57.1542 2.13356 51.5093 6.00001 47.1248C9.86646 42.7402 15.2001 39.9174 21 39.186ZM24 36C14.055 36 6 27.945 6 18C6 8.055 14.055 0 24 0C33.945 0 42 8.055 42 18C42 27.945 33.945 36 24 36Z"
+                          fill="#0076F5"/>
+                </svg>
+                <div style="margin-left: 10rem;margin-top: 2rem;">
+                    <strong><h3 style="margin-left: -5rem; margin-top: -19px"><b>{{ i.uquvchilar_soni }} </b><b
+                            style="margin-left: 1rem">ta</b>
+                    </h3>
+                    </strong>
+                </div>
+                <p style="margin-left: 75px;" class="text-muted">
+                    O'quvchilar soni
+                </p>
+            </div>
+            <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 16rem;height: 15rem;margin-left: 2rem;"
+                 class=" mt-5">
+                <svg style="margin-left: 106px;margin-top: 3rem;" width="57" height="67" viewBox="0 0 57 67" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 39V63H0C0 56.6348 2.52856 50.5303 7.02944 46.0294C11.5303 41.5286 17.6348 39 24 39ZM42 61.5L33.183 66.135L34.866 56.319L27.735 49.365L37.593 47.931L42 39L46.41 47.931L56.265 49.365L49.134 56.319L50.814 66.135L42 61.5ZM24 36C14.055 36 6 27.945 6 18C6 8.055 14.055 0 24 0C33.945 0 42 8.055 42 18C42 27.945 33.945 36 24 36Z"
+                          fill="#0076F5"/>
+                </svg>
+                <div style="margin-left: 10rem;margin-top: 2rem;">
+                    <strong><h3 style="margin-left: -5rem; margin-top: -19px"><b>{{ i.ishga_joylashganlar }}</b><b
+                            style="margin-left: 1rem">ta</b>
+                    </h3>
+                    </strong>
+                </div>
+                <p style="margin-left: 58px;" class="text-muted">Ishga joylashganlar </p>
+            </div>
+            <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 16rem;height: 15rem;margin-left: 1rem;"
+                 class=" mt-5">
+                <svg style="margin-left: 103px;margin-top: 3rem;" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 27C33.9782 27 37.7936 28.5804 40.6066 31.3934C43.4196 34.2064 45 38.0218 45 42V60H15V42C15 38.0218 16.5804 34.2064 19.3934 31.3934C22.2064 28.5804 26.0218 27 30 27ZM9.864 36.018C9.38657 37.6284 9.10455 39.2903 9.024 40.968L9 42V60H2.73951e-07V46.5C-0.000590421 43.9127 0.954085 41.4163 2.6809 39.4896C4.40772 37.5629 6.78509 36.3416 9.357 36.06L9.867 36.018H9.864ZM50.136 36.018C52.8057 36.1807 55.3128 37.3559 57.1458 39.3037C58.9788 41.2515 59.9996 43.8253 60 46.5V60H51V42C51 39.921 50.7 37.914 50.136 36.018ZM10.5 18C12.4891 18 14.3968 18.7902 15.8033 20.1967C17.2098 21.6032 18 23.5109 18 25.5C18 27.4891 17.2098 29.3968 15.8033 30.8033C14.3968 32.2098 12.4891 33 10.5 33C8.51088 33 6.60322 32.2098 5.1967 30.8033C3.79018 29.3968 3 27.4891 3 25.5C3 23.5109 3.79018 21.6032 5.1967 20.1967C6.60322 18.7902 8.51088 18 10.5 18ZM49.5 18C51.4891 18 53.3968 18.7902 54.8033 20.1967C56.2098 21.6032 57 23.5109 57 25.5C57 27.4891 56.2098 29.3968 54.8033 30.8033C53.3968 32.2098 51.4891 33 49.5 33C47.5109 33 45.6032 32.2098 44.1967 30.8033C42.7902 29.3968 42 27.4891 42 25.5C42 23.5109 42.7902 21.6032 44.1967 20.1967C45.6032 18.7902 47.5109 18 49.5 18ZM30 0C33.1826 0 36.2348 1.26428 38.4853 3.51472C40.7357 5.76516 42 8.8174 42 12C42 15.1826 40.7357 18.2348 38.4853 20.4853C36.2348 22.7357 33.1826 24 30 24C26.8174 24 23.7652 22.7357 21.5147 20.4853C19.2643 18.2348 18 15.1826 18 12C18 8.8174 19.2643 5.76516 21.5147 3.51472C23.7652 1.26428 26.8174 0 30 0Z"
+                          fill="#0076F5"/>
+                </svg>
+                <div style="margin-left: 10rem;margin-top: 2rem;">
+                    <strong><h3 style="margin-left: -52px; margin-top: -9px"><b>{{ i.mentorlar }}</b><b
+                            style="margin-left: 1rem">ta</b>
+                    </h3>
+                    </strong>
+                </div>
+                <p style="margin-left: 104px;" class="text-muted">
+                    Mentorlar
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+
+
+    <h1 class="display-5 mt-5"><b style="margin-left: 1rem">Biz haqimizda</b></h1>
+
+    <div class="row" style="margin: 0">
+
+        <div class="col-6">
+            <img style="box-shadow: 4px 8px 16px rgb(78 84 90);width:230px;margin-top: 5rem;border-radius: 20px"
+                 src="{% static 'images/Mask.png' %}">
+            <img style="box-shadow: 4px 8px 16px rgb(78 84 90);width: 230px; border-radius: 20px;margin-left: 1rem"
+                 src="{% static 'images/Mas%20Group2.png' %}">
+        </div>
+        <div class="col-6">
+            <div style="margin-left: 2rem">
+                <p class="h4 text">
+                    <b>Biz haqimizda faqat bizdan eshiting </b>
+                </p>
+                <p style="width: 27rem;" class="text-muted mt-4">
+                    Eget nam quisque lobortis ipsum sollicitudin. Ultricies morbi platea ac vel duis sed pretium.
+                    Vel ac magnis
+                    et
+                    lobortis adipiscing tempor, tincidunt urna. Morbi aenean natoque bibendum ut volutpat.
+                </p>
+                <p style="width: 27rem;" class="text-muted mt-4">
+                    Varius cras facilisi eleifend consequat libero sit nisl. Purus arcu viverra facilisi in. Sit
+                    consequat dolor
+                    lectus velit, neque, enim, fames laoreet. </p>
+            </div>
         </div>
 
-        <div class="container">
-            <div style="margin-top: 4rem;">
-                <h1 class=" mt-2 "><b>Kurslar</b></h1>
-                <div style="margin-top: -40px;"><a style="color: #0076F5;margin-left: 60.3rem;" href="#">Barcha kurslar
-                    ></a>
-                </div>
-                <div class="row">
-                    <div class="col-4">
+    </div>
+
+    <div class="container">
+        <div style="margin-top: 4rem;">
+            <h1 class=" mt-2 "><b>Kurslar</b></h1>
+            <div style="margin-top: -40px;"><a style="color: #0076F5;margin-left: 60.3rem;" href="#">Barcha kurslar
+                ></a>
+            </div>
+            <div class="row">
+                {% for j in course %}
+                    <div class="col-4 ml-3">
                         <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 23rem;height: 29rem;"
                              class=" mt-5">
                             <img style="margin-left: 7rem;margin-top: 2rem;"
-                                 src="{% static 'images/Mobile%20Bootcamp.png' %}">
+                                 src="{{ j.img.url }}">
                             <div style="margin-top: 2rem;text-align: center">
-                                <strong><h4 style=" margin-top: -9px"><b>Mobile Bootcamp</b></h4>
+                                <strong><h4 style=" margin-top: -9px"><b>{{ j.name }}</b></h4>
                                 </strong>
                             </div>
-                            <p class="lead h6 text-muted mt-2" style="text-align: center;font-size: 13px"><b>
-                                Consectetur adipiscing elit. Potenti in cras etiam nunc. Et <br> diam augue turpis
-                                curabitur et
-                                vitae at et, sit. <br>Purus, vel vel nulla faucibus.</b>
+                            <p class="lead h6 text-muted mt-2" style="text-align: center;font-size: 13px">
+                                <b>{{ j.text }}</b>
                             </p>
                             <div class="mt-4" style="text-align: center">
-                                <h6 class="text-muted mt-2">Boshlanish kuni: <a style="color: #0076F5;">16.01.2022</a>
+                                <h6 class="text-muted mt-2">Boshlanish kuni: <a
+                                        style="color: #0076F5;">{{ j.course_data }}</a>
                                 </h6>
-                                <h6 class="text-muted mt-2">Qolgan joylar: <a style="color: #0076F5;">8 ta</a></h6>
-                                <button style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 11rem;border-radius: 9px;"
-                                        type="button"
-                                        class="btn btn-outline-primary mt-3">Batafsil
-                                </button>
+                                <h6 class="text-muted mt-2">Qolgan joylar: <a
+                                        style="color: #0076F5;">{{ j.joy_qolgan }}</a></h6>
+                                <a class="nav-link" href="{% url 'course' %}">
+                                    <button style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 11rem;border-radius: 9px;"
+                                            type="button"
+                                            class="btn btn-outline-primary mt-3">Batafsil
+                                    </button>
+                                </a>
                             </div>
 
 
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 23rem;height: 29rem;margin-left: 1rem;"
-                             class=" mt-5">
-                            <img style="margin-top: 2rem;;margin-left: 7rem"
-                                 src="{% static 'images/Ellipse%206.png' %}">
-                            <div style="margin-top: 2rem;text-align: center">
-                                <strong><h4 style=" margin-top: -9px"><b>Frontend Bootcamp</b></h4>
-                                </strong>
-                            </div>
-                            <p class="lead h6 text-muted mt-2" style="text-align: center;font-size: 13px"><b>
-                                Consectetur adipiscing elit. Potenti in cras etiam nunc. Et <br> diam augue turpis
-                                curabitur et
-                                vitae at et, sit. <br>Purus, vel vel nulla faucibus.</b>
-                            </p>
-                            <div class="mt-4" style="text-align: center">
-                                <h6 class="text-muted mt-2">Boshlanish kuni: <a style="color: #0076F5;">16.01.2022</a>
-                                </h6>
-                                <h6 class="text-muted mt-2">Qolgan joylar: <a style="color: #0076F5;">8 ta</a></h6>
-                                <button style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 11rem;border-radius: 9px;"
-                                        type="button"
-                                        class="btn btn-outline-primary mt-3">Batafsil
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 23rem;height: 29rem;margin-left: 2rem;"
-                             class=" mt-5">
-                            <img style="margin-top: 2rem;margin-left: 7rem" src="{% static 'images/Ellipse%207.png' %}">
-                            <div style="margin-top: 2rem;text-align: center">
-                                <strong><h4 style=" margin-top: -9px"><b>Backend Bootcamp</b></h4>
-                                </strong>
-                            </div>
-                            <p class="lead h6 text-muted mt-2" style="text-align: center;font-size: 13px"><b>
-                                Consectetur adipiscing elit. Potenti in cras etiam nunc. Et <br> diam augue turpis
-                                curabitur et
-                                vitae at et, sit. <br>Purus, vel vel nulla faucibus.</b>
-                            </p>
-                            <div class="mt-4" style="text-align: center">
-                                <h6 class="text-muted mt-2">Boshlanish kuni: <a style="color: #0076F5;">16.01.2022</a>
-                                </h6>
-                                <h6 class="text-muted mt-2">Qolgan joylar: <a style="color: #0076F5;">8 ta</a></h6>
-                                <button style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 11rem;border-radius: 9px;"
-                                        type="button"
-                                        class="btn btn-outline-primary mt-3">Batafsil
-                                </button>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
+                {% endfor %}
             </div>
         </div>
+    </div>
 
-        <h1 class="display-5 mt-5"><b>Biz haqimizda</b></h1>
+    <h1 class="display-5 mt-5"><b>Bepul darsliklar</b></h1>
 
-        <div class="container" style="margin-left: 65px">
-            <div class="row mt-5">
-
-                <div class=""
-                     style="width: 17rem;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;margin-left: -4rem;">
+    <div class="container" style="margin-left: 65px">
+        <div class="row mt-5">
+            {% for k in lesson %}
+                <div class="col-3 ml-3"
+                     style="width: 17rem;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
                     <img src="{% static 'images/unsplash_ieic5Tq8YMk.png' %}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Backend Bootcamp</h5>
-                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue
-                            turpis
-                            curabitur
-                            et vitae at et, sit.</p>
-                        <button type="button"
-                                style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 10rem"
-                                type="button" class="btn btn-outline-primary">Ko'rish
-                        </button>
+                        <h5 class="card-title">{{ k.name }}</h5>
+                        <p class="card-text">{{ k.text }}.</p>
+                        <a href="{% url 'course' %}">
+                            <button type="button"
+                                    style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 10rem"
+                                    type="button" class="btn btn-outline-primary">Ko'rish
+                            </button>
+                        </a>
                     </div>
                 </div>
-                <div class=""
-                     style="width: 17rem;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;margin-left: 1rem;">
-                    <img src="{% static 'images/unsplash_f77Bh3inUpE.png' %}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Backend Bootcamp</h5>
-                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue
-                            turpis
-                            curabitur
-                            et vitae at et, sit.</p>
-                        <button type="button"
-                                style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 10rem"
-                                type="button" class="btn btn-outline-primary">Ko'rish
-                        </button>
-                    </div>
-                </div>
-                <div class=""
-                     style="width: 17rem;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;margin-left: 1rem;">
-                    <img src="{% static 'images/unsplash_ieic5Tq8YMk.png' %}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Backend Bootcamp</h5>
-                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue
-                            turpis
-                            curabitur
-                            et vitae at et, sit.</p>
-                        <button type="button"
-                                style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 10rem"
-                                type="button" class="btn btn-outline-primary">Ko'rish
-                        </button>
-                    </div>
-                </div>
-                <div class=""
-                     style="width: 17rem;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;margin-left: 1rem;">
-                    <img src="{% static 'images/unsplash_842ofHC6MaI.png' %}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Mobile Bootcamp</h5>
-                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue
-                            turpis
-                            curabitur
-                            et vitae at et, sit.</p>
-                        <button type="button"
-                                style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 10rem"
-                                type="button" class="btn btn-outline-primary">Ko'rish
-                        </button>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
+    </div>
 
-        <h1 class="display-5 mt-5"><b>Bizning jamoa</b></h1>
+    <h1 class="display-5 mt-5"><b>Bizning jamoa</b></h1>
 
-        <div class="container">
-            <div class="row">
+    <div class="container">
+        <div class="row">
+            {% for i in bizningjamoa %}
                 <div class="container mt-4 col-3">
                     <div class="card"
                          style="width: 15rem;  border-radius: 3%;background-color: #F5FAFF">
                         <img src="{% static 'images/Ellipse 1.png' %}" class="card-img-top mt-3" alt="..."
                              style="height: 106px;width: 112px;border-radius: 50%;margin-left: 67px;">
                         <div class="card-body" style="text-align: center">
-                            <h6 class="card-title" style="font-size: 22px;">Zohidjon Akbarov</h6>
-                            <h6 class="card-text" style="color: #0076F5">Frontend dasturchi</h6>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-                                dignissimos</p>
+                            <h6 class="card-title" style="font-size: 22px;">{{ i.name }}</h6>
+                            <h6 class="card-text" style="color: #0076F5">{{ i.job }}</h6>
+                            <p class="card-text">{{ i.text | truncatechars:70 }}</p>
                             <a href="https://www.facebook.com/campaign/landing.php?campaign_id=11554070363&extra_1=s%7Cc%7C477437435738%7Ce%7Cfacebook%7C&placement=&creative=477437435738&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D11554070363%26adgroupid%3D112923417056%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2GAD8BzOakhjV0YaUg8_4QHoSZ1ygVR-0aPWUX4Nd2Z2SXvveIctooaAo_7EALw_wcB"
                                style="text-decoration:none;color: black">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -386,226 +290,716 @@
                         </div>
                     </div>
                 </div>
-                <div class="container mt-4 col-3 ">
-                    <div class="card"
-                         style="width: 15rem; border-radius: 3%;background-color: #F5FAFF">
-                        <img src="{% static 'images/Ellipse 1.png' %}" class="card-img-top mt-3" alt="..."
-                             style="height: 106px;width: 112px;border-radius: 50%;margin-left: 67px;">
-                        <div class="card-body" style="text-align: center">
-                            <h6 class="card-title" style="font-size: 22px;">Zohidjon Akbarov</h6>
-                            <h6 class="card-text" style="color: #0076F5">Mobile dasturchi</h6>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-                                dignissimos</p>
-                            <a href="https://www.facebook.com/campaign/landing.php?campaign_id=11554070363&extra_1=s%7Cc%7C477437435738%7Ce%7Cfacebook%7C&placement=&creative=477437435738&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D11554070363%26adgroupid%3D112923417056%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2GAD8BzOakhjV0YaUg8_4QHoSZ1ygVR-0aPWUX4Nd2Z2SXvveIctooaAo_7EALw_wcB"
-                               style="text-decoration:none;color: black">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                     class="bi bi-facebook" viewBox="0 0 16 16">
-                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.instagram.com/"
-                               style="text-decoration:none;color: black; margin-left: 6px">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                     class="bi bi-instagram" viewBox="0 0 16 16">
-                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.youtube.com/"
-                               style="text-decoration:none;color: black; margin-left: 6px">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                     class="bi bi-youtube" viewBox="0 0 16 16">
-                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.github.com/"
-                               style="text-decoration:none;color: black;margin-left: 6px">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                     class="bi bi-github" viewBox="0 0 16 16">
-                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container mt-4 col-3">
-                    <div class="card"
-                         style="width: 15rem; border-radius: 3%; background-color: #F5FAFF">
-                        <img src="{% static 'images/Ellipse 1.png' %}" class="card-img-top mt-3" alt="..."
-                             style="height: 106px;width: 112px;border-radius: 50%;margin-left: 67px;">
-                        <div class="card-body" style="text-align: center">
-                            <h6 class="card-title" style="font-size: 22px;">User Userov</h6>
-                            <h6 class="card-text" style="color: #0076F5">Backend dasturchi</h6>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-                                dignissimos</p>
-                            <a href="https://www.facebook.com/campaign/landing.php?campaign_id=11554070363&extra_1=s%7Cc%7C477437435738%7Ce%7Cfacebook%7C&placement=&creative=477437435738&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D11554070363%26adgroupid%3D112923417056%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2GAD8BzOakhjV0YaUg8_4QHoSZ1ygVR-0aPWUX4Nd2Z2SXvveIctooaAo_7EALw_wcB"
-                               style="text-decoration:none;color: black">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                     class="bi bi-facebook" viewBox="0 0 16 16">
-                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.instagram.com/"
-                               style="text-decoration:none;color: black; margin-left: 6px">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                     class="bi bi-instagram" viewBox="0 0 16 16">
-                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.youtube.com/"
-                               style="text-decoration:none;color: black; margin-left: 6px">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                     class="bi bi-youtube" viewBox="0 0 16 16">
-                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.github.com/"
-                               style="text-decoration:none;color: black;margin-left: 6px">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                     class="bi bi-github" viewBox="0 0 16 16">
-                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container mt-4 col-3">
-                    <div class="card"
-                         style="width: 15rem;border-radius: 3%; background-color: #F5FAFF">
-                        <img src="{% static 'images/Ellipse 1.png' %}" class="card-img-top mt-3" alt="..."
-                             style="height: 106px;width: 112px;border-radius: 50%;margin-left: 67px;">
-                        <div class="card-body" style="text-align: center">
-                            <h6 class="card-title" style="font-size: 22px;">User Userov</h6>
-                            <h6 class="card-text" style="color: #0076F5">Backend dasturchi</h6>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-                                dignissimos</p>
-                            <a href="https://www.facebook.com/campaign/landing.php?campaign_id=11554070363&extra_1=s%7Cc%7C477437435738%7Ce%7Cfacebook%7C&placement=&creative=477437435738&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D11554070363%26adgroupid%3D112923417056%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2GAD8BzOakhjV0YaUg8_4QHoSZ1ygVR-0aPWUX4Nd2Z2SXvveIctooaAo_7EALw_wcB"
-                               style="text-decoration:none;color: black">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                     class="bi bi-facebook" viewBox="0 0 16 16">
-                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.instagram.com/"
-                               style="text-decoration:none;color: black; margin-left: 6px">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                     class="bi bi-instagram" viewBox="0 0 16 16">
-                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.youtube.com/"
-                               style="text-decoration:none;color: black; margin-left: 6px">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                     class="bi bi-youtube" viewBox="0 0 16 16">
-                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.github.com/"
-                               style="text-decoration:none;color: black;margin-left: 6px">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                     class="bi bi-github" viewBox="0 0 16 16">
-                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
+    </div>
 
 
-        <h1 class="display-5 mt-5"><b>Sertifikat</b></h1>
-        <div class="mt-5">
-            <img width="60%" src="{% static 'images/Desktop%20-%201%201.png' %}">
-            <div style="margin-left: 43rem;margin-top: -19rem;">
-                <h4><b>+200 o’quvchilar bizga ishonishgan</b></h4>
-                <p style="width: 26rem;" class="card-text mt-3"> Kursni tamomlagan talabalarning o’zlashtirish
-                    ko’rsatkichi
-                    e’tiborga olingan holda sertifikatlar beriladi.
+    <h1 class="display-5 mt-5"><b>Sertifikat</b></h1>
+    <div class="mt-5">
+        <img width="60%" src="{% static 'images/Desktop%20-%201%201.png' %}">
+        <div style="margin-left: 43rem;margin-top: -19rem;">
+            <h4><b>+200 o’quvchilar bizga ishonishgan</b></h4>
+            <p style="width: 26rem;" class="card-text mt-3"> Kursni tamomlagan talabalarning o’zlashtirish
+                ko’rsatkichi
+                e’tiborga olingan holda sertifikatlar beriladi.
 
-            </div>
-
-        </div>
-        <div>
-            <div style="border-top: 1.5px solid #edeceb;border-bottom: 1.5px solid #edeceb;height: 300px;margin-top: 250px">
-                <div class="container">
-                    <div class="row mt-5">
-                        <div class="col-4">
-                            <p style="font-size:15px;font-family: 'Nunito Sans', sans-serif;">
-                                Neumorphism UI PRO is a premium Bootstrap UI <br> Kit built based on the newest design
-                                trend
-                                called
-                                <br> Neumorphism.
-                            </p>
-                            <a href=""><img src="{% static 'images/Vector.jpg' %}" alt=""></a>
-                            <a href=""> <img src="{% static 'images/Vector%20(1).jpg' %}" alt=""
-                                             style="margin-left: 20px"></a>
-                            <a href=""><img src="x{% static 'img/Desktop%20-%201%201.png' %}" alt=""
-                                            style="margin-left: 20px"></a>
-                        </div>
-                        <div class="col-2">
-                            <h5>Webbrain</h5>
-                            <ul style=" list-style-type: none;padding:0">
-                                <a href="" style="color: black;text-decoration: none">
-                                    <li class="mt-4">Team</li>
-                                </a>
-                                <a href="" style="color: black;text-decoration: none">
-                                    <li class="mt-4">Partners</li>
-                                    <a href="" style="color: black;text-decoration: none">
-                                        <li class="mt-4">Lessons</li>
-                                    </a>
-                                    <a href="" style="color: black;text-decoration: none">
-                                        <li class="mt-4">About us</li>
-                                    </a>
-                            </ul>
-                        </div>
-                        <div class="col-2">
-                            <h5>Others</h5>
-                            <ul style=" list-style-type: none;padding:0">
-                                <a href="" style="color: black;text-decoration: none">
-                                    <li class="mt-4">Docs</li>
-                                </a>
-                                <a href="" style="color: black;text-decoration: none">
-                                    <li class="mt-4">Changelog</li>
-                                </a>
-                                <a href="" style="color: black;text-decoration: none">
-                                    <li class="mt-4">Licence</li>
-                                </a>
-                                <a href="" style="color: black;text-decoration: none">
-                                    <li class="mt-4">Support</li>
-                                </a>
-
-                            </ul>
-                        </div>
-                        <div class="col-4">
-                            <h5>Others</h5>
-                            <p style="font-size: 16px">
-                                Join our mailing list. We write rarely, but only <br> the best content
-                            </p>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="exampleFormControlInput6"
-                                       placeholder="Email manzilingiz"
-                                       style="width: 321px;height: 48px; border-radius: 8px;border: 1px solid #edeceb">
-                            </div>
-                            <button type="button" class="btn btn-primary "
-                                    style="width:90%; box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Yuborish
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mt-5" style="text-align: center">
-            <a class="navbar-brand" href="#"><h1 style="font-family: 'Fira Code', monospace;color: black"><span
-                    style="color:#0076F5;">web</span>brain</h1></a>
-            <p style="color: black;font-size: 15px">Copyrigth &copy; Webbrain 2021. All rights reserved</p>
         </div>
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-            crossorigin="anonymous"></script>
+
+    <div id="aloqa"
+         style="border-top: 1.5px solid #edeceb;border-bottom: 1.5px solid #edeceb;height: 300px;margin-top: 250px">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-4">
+                    <p style="font-size:15px;font-family: 'Nunito Sans', sans-serif;">
+                        Neumorphism UI PRO is a premium Bootstrap UI <br> Kit built based on the newest design trend
+                        called
+                        <br> Neumorphism.
+                    </p>
+                    <a href=""><img src="{% static 'images/Vector.jpg' %}" alt=""></a>
+                    <a href=""> <img src="{% static 'images/Vector%20(1).jpg' %}" alt="" style="margin-left: 20px"></a>
+                    <a href=""><img src="x{% static 'img/Desktop%20-%201%201.png' %}" alt="" style="margin-left: 20px"></a>
+                </div>
+                <div class="col-2">
+                    <h5>Webbrain</h5>
+                    <ul style=" list-style-type: none;padding:0">
+                        <a href="" style="color: black;text-decoration: none">
+                            <li class="mt-4">Team</li>
+                        </a>
+                        <a href="" style="color: black;text-decoration: none">
+                            <li class="mt-4">Partners</li>
+                            <a href="" style="color: black;text-decoration: none">
+                                <li class="mt-4">Lessons</li>
+                            </a>
+                            <a href="" style="color: black;text-decoration: none">
+                                <li class="mt-4">About us</li>
+                            </a>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h5>Others</h5>
+                    <ul style=" list-style-type: none;padding:0">
+                        <a href="" style="color: black;text-decoration: none">
+                            <li class="mt-4">Docs</li>
+                        </a>
+                        <a href="" style="color: black;text-decoration: none">
+                            <li class="mt-4">Changelog</li>
+                        </a>
+                        <a href="" style="color: black;text-decoration: none">
+                            <li class="mt-4">Licence</li>
+                        </a>
+                        <a href="" style="color: black;text-decoration: none">
+                            <li class="mt-4">Support</li>
+                        </a>
+
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h5>Others</h5>
+                    <p style="font-size: 16px">
+                        Join our mailing list. We write rarely, but only <br> the best content
+                    </p>
+                    <div id="aloqa" class="form-group">
+                        <input type="email" class="form-control" id="exampleFormControlInput6"
+                               placeholder="Email manzilingiz"
+                               style="width: 321px;height: 48px; border-radius: 8px;border: 1px solid #edeceb">
+                    </div>
+                    <a class="nav-link" href="{% url 'sign_up' %}">
+                        <button type="button" class="btn btn-primary "
+                                style="width:90%; box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Yuborish
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5" style="text-align: center">
+        <a class="navbar-brand" href="#"><h1 style="font-family: 'Fira Code', monospace;color: black"><span
+                style="color:#0076F5;">web</span>brain</h1></a>
+        <p style="color: black;font-size: 15px">Copyrigth &copy; Webbrain 2021. All rights reserved</p>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+{#{% load static %}#}
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>EDU</title>#}
+{#    <link rel="preconnect" href="https://fonts.googleapis.com">#}
+{#    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>#}
+{#    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"#}
+{#          rel="stylesheet">#}
+{#    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">#}
+{#    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"#}
+{#          rel="stylesheet">#}
+{#    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">#}
+{#    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"#}
+{#          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">#}
+{#    <style>#}
+{#        .card {#}
+{#            border: none;#}
+{#            background-color: white;#}
+{#            box-shadow: 0px 3px 31px -7px rgba(0, 0, 0, 0.15)#}
+{#        }#}
+{#    </style>#}
+{##}
+{#</head>#}
+{#<body style="background-color:  #F5FAFF;">#}
+{##}
+{##}
+{#<div class="container">#}
+{#    {% include 'main/navbar.html' %}#}
+{##}
+{#    <div class="row" style="margin-top: 30px">#}
+{#        <div class="col-6" style="margin-top: 33px">#}
+{#            <div class="container mt-5 display-4">#}
+{#                <p style="font-weight: 600;font-family: 'Fira Code',monospace;font-size: 45px"><span#}
+{#                        style="color: #0076F5">Eng kuchli </span> va <br> zamonaviy o’qitish <br>#}
+{#                    uslubida ta’lim <br> beruvchi <span style="color: #0076F5"> markaz</span></p>#}
+{#            </div>#}
+{#            <div style="margin-top: 2rem;">#}
+{#                <div class="row">#}
+{#                    <div class="col-6 mt-2">#}
+{#                        <a href="{% url 'course' %}">#}
+{#                            <button type="button"#}
+{#                                    style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);margin-left: 1rem;width: 10rem;"#}
+{#                                    type="button" class="btn btn-outline-primary">#}
+{#                                Kurslarimiz#}
+{#                            </button>#}
+{#                        </a>#}
+{#                    </div>#}
+{#                    <div class="col-6">#}
+{##}
+{#                        <a class="nav-link" href="#aloqa">#}
+{#                            <button type="button"#}
+{#                                    style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 10rem; margin-left: -4rem"#}
+{#                                    type="button" class="btn btn-outline-primary">Aloqa#}
+{#                            </button>#}
+{#                        </a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="col-6" style="margin-top: -80px">#}
+{#                <div>#}
+{#                    <img style="box-shadow: 12px 12px 31px -7px rgb(0 0 0);border-radius: 31px;width: 10rem"#}
+{#                         src="{% static 'images/2.png' %}">#}
+{#                    <img style="    box-shadow: 12px 12px 31px -7px rgb(0 0 0);border-radius: 31px;margin-left: 1.5rem;width: 10rem;margin-top: 167px"#}
+{#                         src="{% static 'images/1.png' %}">#}
+{#                    <img style="    box-shadow: 12px 12px 31px -7px rgb(0 0 0); border-radius: 31px;margin-left: 1.5rem;width: 10rem"#}
+{#                         src="{% static 'images/3.png' %}">#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{##}
+{#        </div>#}
+{#        <h1 class="display-5 mt-5"><b style="margin-left: 1rem">Statistika</b></h1>#}
+{#        <div class="row">#}
+{#            {% for i in statictika %}#}
+{#                <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 16rem;height: 15rem;margin-left: 2rem;"#}
+{#                     class=" mt-5">#}
+{#                    <svg style="margin-left: 106px;margin-top: 3rem;" width="48" height="65" viewBox="0 0 48 65"#}
+{#                         fill="none"#}
+{#                         xmlns="http://www.w3.org/2000/svg">#}
+{#                        <path d="M39 42.7349V63.3509C39.0001 63.6163 38.9297 63.877 38.7961 64.1063C38.6625 64.3356 38.4705 64.5254 38.2396 64.6562C38.0087 64.7871 37.7472 64.8543 37.4818 64.8511C37.2164 64.8479 36.9567 64.7743 36.729 64.6379L24 56.9999L11.271 64.6379C11.0431 64.7745 10.7831 64.8481 10.5174 64.8511C10.2518 64.8542 9.99012 64.7867 9.75913 64.6555C9.52814 64.5243 9.33614 64.3341 9.20276 64.1044C9.06938 63.8746 8.99941 63.6136 9 63.3479V42.7379C5.11844 39.6302 2.29798 35.3936 0.928377 30.6135C-0.441223 25.8335 -0.292332 20.7461 1.35447 16.0543C3.00128 11.3626 6.06469 7.29817 10.1213 4.42276C14.178 1.54735 19.0276 0.00292969 24 0.00292969C28.9724 0.00292969 33.822 1.54735 37.8786 4.42276C41.9353 7.29817 44.9987 11.3626 46.6455 16.0543C48.2923 20.7461 48.4412 25.8335 47.0716 30.6135C45.702 35.3936 42.8816 39.6302 39 42.7379V42.7349ZM24 41.9999C28.7739 41.9999 33.3523 40.1035 36.7279 36.7278C40.1036 33.3522 42 28.7738 42 23.9999C42 19.226 40.1036 14.6477 36.7279 11.272C33.3523 7.89635 28.7739 5.99992 24 5.99992C19.2261 5.99992 14.6477 7.89635 11.2721 11.272C7.89642 14.6477 6 19.226 6 23.9999C6 28.7738 7.89642 33.3522 11.2721 36.7278C14.6477 40.1035 19.2261 41.9999 24 41.9999ZM24 35.9999C20.8174 35.9999 17.7652 34.7356 15.5147 32.4852C13.2643 30.2348 12 27.1825 12 23.9999C12 20.8173 13.2643 17.7651 15.5147 15.5146C17.7652 13.2642 20.8174 11.9999 24 11.9999C27.1826 11.9999 30.2348 13.2642 32.4853 15.5146C34.7357 17.7651 36 20.8173 36 23.9999C36 27.1825 34.7357 30.2348 32.4853 32.4852C30.2348 34.7356 27.1826 35.9999 24 35.9999Z"#}
+{#                              fill="#0076F5"/>#}
+{#                    </svg>#}
+{##}
+{#                    <div style="margin-left: 10rem;margin-top: 2rem;">#}
+{#                        <strong><h3 style="margin-left: -4rem; margin-top: -19px"><b>{{ i.kurslar_soni }}</b><b#}
+{#                                style="margin-left: 1rem">ta</b>#}
+{#                        </h3>#}
+{#                        </strong>#}
+{#                    </div>#}
+{##}
+{#                    <p style="margin-left: 72px;" class="text-muted">#}
+{#                        Kurslarimiz soni#}
+{#                    </p>#}
+{#                </div>#}
+{##}
+{##}
+{#                <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 16rem;height: 15rem;margin-left:  2rem;"#}
+{#                     class=" mt-5">#}
+{#                    <svg style="margin-left: 106px;margin-top: 3rem;" width="48" height="63" viewBox="0 0 48 63"#}
+{#                         fill="none"#}
+{#                         xmlns="http://www.w3.org/2000/svg">#}
+{#                        <path d="M21 39.186V57H27V39.186C38.838 40.662 48 50.76 48 63H0C9.92216e-05 57.1542 2.13356 51.5093 6.00001 47.1248C9.86646 42.7402 15.2001 39.9174 21 39.186ZM24 36C14.055 36 6 27.945 6 18C6 8.055 14.055 0 24 0C33.945 0 42 8.055 42 18C42 27.945 33.945 36 24 36Z"#}
+{#                              fill="#0076F5"/>#}
+{#                    </svg>#}
+{#                    <div style="margin-left: 10rem;margin-top: 2rem;">#}
+{#                        <strong><h3 style="margin-left: -5rem; margin-top: -19px"><b>{{ i.uquvchilar_soni }} </b><b#}
+{#                                style="margin-left: 1rem">ta</b>#}
+{#                        </h3>#}
+{#                        </strong>#}
+{#                    </div>#}
+{#                    <p style="margin-left: 75px;" class="text-muted">#}
+{#                        O'quvchilar soni#}
+{#                    </p>#}
+{#                </div>#}
+{#                <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 16rem;height: 15rem;margin-left: 2rem;"#}
+{#                     class=" mt-5">#}
+{#                    <svg style="margin-left: 106px;margin-top: 3rem;" width="57" height="67" viewBox="0 0 57 67"#}
+{#                         fill="none"#}
+{#                         xmlns="http://www.w3.org/2000/svg">#}
+{#                        <path d="M24 39V63H0C0 56.6348 2.52856 50.5303 7.02944 46.0294C11.5303 41.5286 17.6348 39 24 39ZM42 61.5L33.183 66.135L34.866 56.319L27.735 49.365L37.593 47.931L42 39L46.41 47.931L56.265 49.365L49.134 56.319L50.814 66.135L42 61.5ZM24 36C14.055 36 6 27.945 6 18C6 8.055 14.055 0 24 0C33.945 0 42 8.055 42 18C42 27.945 33.945 36 24 36Z"#}
+{#                              fill="#0076F5"/>#}
+{#                    </svg>#}
+{#                    <div style="margin-left: 10rem;margin-top: 2rem;">#}
+{#                        <strong><h3 style="margin-left: -5rem; margin-top: -19px"><b>{{ i.ishga_joylashganlar }}</b><b#}
+{#                                style="margin-left: 1rem">ta</b>#}
+{#                        </h3>#}
+{#                        </strong>#}
+{#                    </div>#}
+{#                    <p style="margin-left: 58px;" class="text-muted">Ishga joylashganlar </p>#}
+{#                </div>#}
+{#                <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 16rem;height: 15rem;margin-left: 1rem;"#}
+{#                     class=" mt-5">#}
+{#                    <svg style="margin-left: 103px;margin-top: 3rem;" width="60" height="60" viewBox="0 0 60 60"#}
+{#                         fill="none"#}
+{#                         xmlns="http://www.w3.org/2000/svg">#}
+{#                        <path d="M30 27C33.9782 27 37.7936 28.5804 40.6066 31.3934C43.4196 34.2064 45 38.0218 45 42V60H15V42C15 38.0218 16.5804 34.2064 19.3934 31.3934C22.2064 28.5804 26.0218 27 30 27ZM9.864 36.018C9.38657 37.6284 9.10455 39.2903 9.024 40.968L9 42V60H2.73951e-07V46.5C-0.000590421 43.9127 0.954085 41.4163 2.6809 39.4896C4.40772 37.5629 6.78509 36.3416 9.357 36.06L9.867 36.018H9.864ZM50.136 36.018C52.8057 36.1807 55.3128 37.3559 57.1458 39.3037C58.9788 41.2515 59.9996 43.8253 60 46.5V60H51V42C51 39.921 50.7 37.914 50.136 36.018ZM10.5 18C12.4891 18 14.3968 18.7902 15.8033 20.1967C17.2098 21.6032 18 23.5109 18 25.5C18 27.4891 17.2098 29.3968 15.8033 30.8033C14.3968 32.2098 12.4891 33 10.5 33C8.51088 33 6.60322 32.2098 5.1967 30.8033C3.79018 29.3968 3 27.4891 3 25.5C3 23.5109 3.79018 21.6032 5.1967 20.1967C6.60322 18.7902 8.51088 18 10.5 18ZM49.5 18C51.4891 18 53.3968 18.7902 54.8033 20.1967C56.2098 21.6032 57 23.5109 57 25.5C57 27.4891 56.2098 29.3968 54.8033 30.8033C53.3968 32.2098 51.4891 33 49.5 33C47.5109 33 45.6032 32.2098 44.1967 30.8033C42.7902 29.3968 42 27.4891 42 25.5C42 23.5109 42.7902 21.6032 44.1967 20.1967C45.6032 18.7902 47.5109 18 49.5 18ZM30 0C33.1826 0 36.2348 1.26428 38.4853 3.51472C40.7357 5.76516 42 8.8174 42 12C42 15.1826 40.7357 18.2348 38.4853 20.4853C36.2348 22.7357 33.1826 24 30 24C26.8174 24 23.7652 22.7357 21.5147 20.4853C19.2643 18.2348 18 15.1826 18 12C18 8.8174 19.2643 5.76516 21.5147 3.51472C23.7652 1.26428 26.8174 0 30 0Z"#}
+{#                              fill="#0076F5"/>#}
+{#                    </svg>#}
+{#                    <div style="margin-left: 10rem;margin-top: 2rem;">#}
+{#                        <strong><h3 style="margin-left: -52px; margin-top: -9px"><b>{{ i.mentorlar }}</b><b#}
+{#                                style="margin-left: 1rem">ta</b>#}
+{#                        </h3>#}
+{#                        </strong>#}
+{#                    </div>#}
+{#                    <p style="margin-left: 104px;" class="text-muted">#}
+{#                        Mentorlar#}
+{#                    </p>#}
+{#                </div>#}
+{#            {% endfor %}#}
+{#        </div>#}
+{##}
+{##}
+{#        <h1 class="display-5 mt-5"><b style="margin-left: 1rem">Biz haqimizda</b></h1>#}
+{##}
+{#        <div class="row" style="margin: 0">#}
+{##}
+{#            <div class="col-6">#}
+{#                <img style="box-shadow: 4px 8px 16px rgb(78 84 90);width:230px;margin-top: 5rem;border-radius: 20px"#}
+{#                     src="{% static 'images/Mask.png' %}">#}
+{#                <img style="box-shadow: 4px 8px 16px rgb(78 84 90);width: 230px; border-radius: 20px;margin-left: 1rem"#}
+{#                     src="{% static 'images/Mas%20Group2.png' %}">#}
+{#            </div>#}
+{#            <div class="col-6">#}
+{#                <div style="margin-left: 2rem">#}
+{#                    <p class="h4 text">#}
+{#                        <b>Biz haqimizda faqat bizdan eshiting </b>#}
+{#                    </p>#}
+{#                    <p style="width: 27rem;" class="text-muted mt-4">#}
+{#                        Eget nam quisque lobortis ipsum sollicitudin. Ultricies morbi platea ac vel duis sed pretium.#}
+{#                        Vel ac magnis#}
+{#                        et#}
+{#                        lobortis adipiscing tempor, tincidunt urna. Morbi aenean natoque bibendum ut volutpat.#}
+{#                    </p>#}
+{#                    <p style="width: 27rem;" class="text-muted mt-4">#}
+{#                        Varius cras facilisi eleifend consequat libero sit nisl. Purus arcu viverra facilisi in. Sit#}
+{#                        consequat dolor#}
+{#                        lectus velit, neque, enim, fames laoreet. </p>#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#        </div>#}
+{##}
+{#        <div class="container">#}
+{#            <div style="margin-top: 4rem;">#}
+{#                <h1 class=" mt-2 "><b>Kurslar</b></h1>#}
+{#                <div style="margin-top: -40px;"><a style="color: #0076F5;margin-left: 60.3rem;" href="#">Barcha kurslar#}
+{#                    ></a>#}
+{#                </div>#}
+{#                <div class="row">#}
+{#                    <div class="col-4">#}
+{#                        <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 23rem;height: 29rem;"#}
+{#                             class=" mt-5">#}
+{#                            <img style="margin-left: 7rem;margin-top: 2rem;"#}
+{#                                 src="{% static 'images/Mobile%20Bootcamp.png' %}">#}
+{#                            <div style="margin-top: 2rem;text-align: center">#}
+{#                                <strong><h4 style=" margin-top: -9px"><b>Mobile Bootcamp</b></h4>#}
+{#                                </strong>#}
+{#                            </div>#}
+{#                            <p class="lead h6 text-muted mt-2" style="text-align: center;font-size: 13px"><b>#}
+{#                                Consectetur adipiscing elit. Potenti in cras etiam nunc. Et <br> diam augue turpis#}
+{#                                curabitur et#}
+{#                                vitae at et, sit. <br>Purus, vel vel nulla faucibus.</b>#}
+{#                            </p>#}
+{#                            <div class="mt-4" style="text-align: center">#}
+{#                                <h6 class="text-muted mt-2">Boshlanish kuni: <a style="color: #0076F5;">16.01.2022</a>#}
+{#                                </h6>#}
+{#                                <h6 class="text-muted mt-2">Qolgan joylar: <a style="color: #0076F5;">8 ta</a></h6>#}
+{#                                <button style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 11rem;border-radius: 9px;"#}
+{#                                        type="button"#}
+{#                                        class="btn btn-outline-primary mt-3">Batafsil#}
+{#                                </button>#}
+{#                            </div>#}
+{##}
+{##}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="col-4">#}
+{#                        <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 23rem;height: 29rem;margin-left: 1rem;"#}
+{#                             class=" mt-5">#}
+{#                            <img style="margin-top: 2rem;;margin-left: 7rem"#}
+{#                                 src="{% static 'images/Ellipse%206.png' %}">#}
+{#                            <div style="margin-top: 2rem;text-align: center">#}
+{#                                <strong><h4 style=" margin-top: -9px"><b>Frontend Bootcamp</b></h4>#}
+{#                                </strong>#}
+{#                            </div>#}
+{#                            <p class="lead h6 text-muted mt-2" style="text-align: center;font-size: 13px"><b>#}
+{#                                Consectetur adipiscing elit. Potenti in cras etiam nunc. Et <br> diam augue turpis#}
+{#                                curabitur et#}
+{#                                vitae at et, sit. <br>Purus, vel vel nulla faucibus.</b>#}
+{#                            </p>#}
+{#                            <div class="mt-4" style="text-align: center">#}
+{#                                <h6 class="text-muted mt-2">Boshlanish kuni: <a style="color: #0076F5;">16.01.2022</a>#}
+{#                                </h6>#}
+{#                                <h6 class="text-muted mt-2">Qolgan joylar: <a style="color: #0076F5;">8 ta</a></h6>#}
+{#                                <button style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 11rem;border-radius: 9px;"#}
+{#                                        type="button"#}
+{#                                        class="btn btn-outline-primary mt-3">Batafsil#}
+{#                                </button>#}
+{#                            </div>#}
+{##}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="col-4">#}
+{#                        <div style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;width: 23rem;height: 29rem;margin-left: 2rem;"#}
+{#                             class=" mt-5">#}
+{#                            <img style="margin-top: 2rem;margin-left: 7rem" src="{% static 'images/Ellipse%207.png' %}">#}
+{#                            <div style="margin-top: 2rem;text-align: center">#}
+{#                                <strong><h4 style=" margin-top: -9px"><b>Backend Bootcamp</b></h4>#}
+{#                                </strong>#}
+{#                            </div>#}
+{#                            <p class="lead h6 text-muted mt-2" style="text-align: center;font-size: 13px"><b>#}
+{#                                Consectetur adipiscing elit. Potenti in cras etiam nunc. Et <br> diam augue turpis#}
+{#                                curabitur et#}
+{#                                vitae at et, sit. <br>Purus, vel vel nulla faucibus.</b>#}
+{#                            </p>#}
+{#                            <div class="mt-4" style="text-align: center">#}
+{#                                <h6 class="text-muted mt-2">Boshlanish kuni: <a style="color: #0076F5;">16.01.2022</a>#}
+{#                                </h6>#}
+{#                                <h6 class="text-muted mt-2">Qolgan joylar: <a style="color: #0076F5;">8 ta</a></h6>#}
+{#                                <button style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 11rem;border-radius: 9px;"#}
+{#                                        type="button"#}
+{#                                        class="btn btn-outline-primary mt-3">Batafsil#}
+{#                                </button>#}
+{#                            </div>#}
+{##}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{##}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <h1 class="display-5 mt-5"><b>Biz haqimizda</b></h1>#}
+{##}
+{#        <div class="container" style="margin-left: 65px">#}
+{#            <div class="row mt-5">#}
+{##}
+{#                <div class=""#}
+{#                     style="width: 17rem;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;margin-left: -4rem;">#}
+{#                    <img src="{% static 'images/unsplash_ieic5Tq8YMk.png' %}" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">Backend Bootcamp</h5>#}
+{#                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue#}
+{#                            turpis#}
+{#                            curabitur#}
+{#                            et vitae at et, sit.</p>#}
+{#                        <button type="button"#}
+{#                                style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 10rem"#}
+{#                                type="button" class="btn btn-outline-primary">Ko'rish#}
+{#                        </button>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class=""#}
+{#                     style="width: 17rem;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;margin-left: 1rem;">#}
+{#                    <img src="{% static 'images/unsplash_f77Bh3inUpE.png' %}" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">Backend Bootcamp</h5>#}
+{#                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue#}
+{#                            turpis#}
+{#                            curabitur#}
+{#                            et vitae at et, sit.</p>#}
+{#                        <button type="button"#}
+{#                                style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 10rem"#}
+{#                                type="button" class="btn btn-outline-primary">Ko'rish#}
+{#                        </button>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class=""#}
+{#                     style="width: 17rem;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;margin-left: 1rem;">#}
+{#                    <img src="{% static 'images/unsplash_ieic5Tq8YMk.png' %}" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">Backend Bootcamp</h5>#}
+{#                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue#}
+{#                            turpis#}
+{#                            curabitur#}
+{#                            et vitae at et, sit.</p>#}
+{#                        <button type="button"#}
+{#                                style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 10rem"#}
+{#                                type="button" class="btn btn-outline-primary">Ko'rish#}
+{#                        </button>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class=""#}
+{#                     style="width: 17rem;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;margin-left: 1rem;">#}
+{#                    <img src="{% static 'images/unsplash_842ofHC6MaI.png' %}" class="card-img-top" alt="...">#}
+{#                    <div class="card-body">#}
+{#                        <h5 class="card-title">Mobile Bootcamp</h5>#}
+{#                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue#}
+{#                            turpis#}
+{#                            curabitur#}
+{#                            et vitae at et, sit.</p>#}
+{#                        <button type="button"#}
+{#                                style="box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);width: 10rem"#}
+{#                                type="button" class="btn btn-outline-primary">Ko'rish#}
+{#                        </button>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#        <h1 class="display-5 mt-5"><b>Bizning jamoa</b></h1>#}
+{##}
+{#        <div class="container">#}
+{#            <div class="row">#}
+{#                <div class="container mt-4 col-3">#}
+{#                    <div class="card"#}
+{#                         style="width: 15rem;  border-radius: 3%;background-color: #F5FAFF">#}
+{#                        <img src="{% static 'images/Ellipse 1.png' %}" class="card-img-top mt-3" alt="..."#}
+{#                             style="height: 106px;width: 112px;border-radius: 50%;margin-left: 67px;">#}
+{#                        <div class="card-body" style="text-align: center">#}
+{#                            <h6 class="card-title" style="font-size: 22px;">Zohidjon Akbarov</h6>#}
+{#                            <h6 class="card-text" style="color: #0076F5">Frontend dasturchi</h6>#}
+{#                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi#}
+{#                                dignissimos</p>#}
+{#                            <a href="https://www.facebook.com/campaign/landing.php?campaign_id=11554070363&extra_1=s%7Cc%7C477437435738%7Ce%7Cfacebook%7C&placement=&creative=477437435738&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D11554070363%26adgroupid%3D112923417056%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2GAD8BzOakhjV0YaUg8_4QHoSZ1ygVR-0aPWUX4Nd2Z2SXvveIctooaAo_7EALw_wcB"#}
+{#                               style="text-decoration:none;color: black">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-facebook" viewBox="0 0 16 16">#}
+{#                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                            <a href="https://www.instagram.com/"#}
+{#                               style="text-decoration:none;color: black; margin-left: 6px">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-instagram" viewBox="0 0 16 16">#}
+{#                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                            <a href="https://www.youtube.com/"#}
+{#                               style="text-decoration:none;color: black; margin-left: 6px">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-youtube" viewBox="0 0 16 16">#}
+{#                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                            <a href="https://www.github.com/"#}
+{#                               style="text-decoration:none;color: black;margin-left: 6px">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-github" viewBox="0 0 16 16">#}
+{#                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="container mt-4 col-3 ">#}
+{#                    <div class="card"#}
+{#                         style="width: 15rem; border-radius: 3%;background-color: #F5FAFF">#}
+{#                        <img src="{% static 'images/Ellipse 1.png' %}" class="card-img-top mt-3" alt="..."#}
+{#                             style="height: 106px;width: 112px;border-radius: 50%;margin-left: 67px;">#}
+{#                        <div class="card-body" style="text-align: center">#}
+{#                            <h6 class="card-title" style="font-size: 22px;">Zohidjon Akbarov</h6>#}
+{#                            <h6 class="card-text" style="color: #0076F5">Mobile dasturchi</h6>#}
+{#                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi#}
+{#                                dignissimos</p>#}
+{#                            <a href="https://www.facebook.com/campaign/landing.php?campaign_id=11554070363&extra_1=s%7Cc%7C477437435738%7Ce%7Cfacebook%7C&placement=&creative=477437435738&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D11554070363%26adgroupid%3D112923417056%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2GAD8BzOakhjV0YaUg8_4QHoSZ1ygVR-0aPWUX4Nd2Z2SXvveIctooaAo_7EALw_wcB"#}
+{#                               style="text-decoration:none;color: black">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-facebook" viewBox="0 0 16 16">#}
+{#                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                            <a href="https://www.instagram.com/"#}
+{#                               style="text-decoration:none;color: black; margin-left: 6px">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-instagram" viewBox="0 0 16 16">#}
+{#                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                            <a href="https://www.youtube.com/"#}
+{#                               style="text-decoration:none;color: black; margin-left: 6px">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-youtube" viewBox="0 0 16 16">#}
+{#                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                            <a href="https://www.github.com/"#}
+{#                               style="text-decoration:none;color: black;margin-left: 6px">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-github" viewBox="0 0 16 16">#}
+{#                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="container mt-4 col-3">#}
+{#                    <div class="card"#}
+{#                         style="width: 15rem; border-radius: 3%; background-color: #F5FAFF">#}
+{#                        <img src="{% static 'images/Ellipse 1.png' %}" class="card-img-top mt-3" alt="..."#}
+{#                             style="height: 106px;width: 112px;border-radius: 50%;margin-left: 67px;">#}
+{#                        <div class="card-body" style="text-align: center">#}
+{#                            <h6 class="card-title" style="font-size: 22px;">User Userov</h6>#}
+{#                            <h6 class="card-text" style="color: #0076F5">Backend dasturchi</h6>#}
+{#                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi#}
+{#                                dignissimos</p>#}
+{#                            <a href="https://www.facebook.com/campaign/landing.php?campaign_id=11554070363&extra_1=s%7Cc%7C477437435738%7Ce%7Cfacebook%7C&placement=&creative=477437435738&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D11554070363%26adgroupid%3D112923417056%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2GAD8BzOakhjV0YaUg8_4QHoSZ1ygVR-0aPWUX4Nd2Z2SXvveIctooaAo_7EALw_wcB"#}
+{#                               style="text-decoration:none;color: black">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-facebook" viewBox="0 0 16 16">#}
+{#                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                            <a href="https://www.instagram.com/"#}
+{#                               style="text-decoration:none;color: black; margin-left: 6px">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-instagram" viewBox="0 0 16 16">#}
+{#                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                            <a href="https://www.youtube.com/"#}
+{#                               style="text-decoration:none;color: black; margin-left: 6px">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-youtube" viewBox="0 0 16 16">#}
+{#                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                            <a href="https://www.github.com/"#}
+{#                               style="text-decoration:none;color: black;margin-left: 6px">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-github" viewBox="0 0 16 16">#}
+{#                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="container mt-4 col-3">#}
+{#                    <div class="card"#}
+{#                         style="width: 15rem;border-radius: 3%; background-color: #F5FAFF">#}
+{#                        <img src="{% static 'images/Ellipse 1.png' %}" class="card-img-top mt-3" alt="..."#}
+{#                             style="height: 106px;width: 112px;border-radius: 50%;margin-left: 67px;">#}
+{#                        <div class="card-body" style="text-align: center">#}
+{#                            <h6 class="card-title" style="font-size: 22px;">User Userov</h6>#}
+{#                            <h6 class="card-text" style="color: #0076F5">Backend dasturchi</h6>#}
+{#                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi#}
+{#                                dignissimos</p>#}
+{#                            <a href="https://www.facebook.com/campaign/landing.php?campaign_id=11554070363&extra_1=s%7Cc%7C477437435738%7Ce%7Cfacebook%7C&placement=&creative=477437435738&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D11554070363%26adgroupid%3D112923417056%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2GAD8BzOakhjV0YaUg8_4QHoSZ1ygVR-0aPWUX4Nd2Z2SXvveIctooaAo_7EALw_wcB"#}
+{#                               style="text-decoration:none;color: black">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-facebook" viewBox="0 0 16 16">#}
+{#                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                            <a href="https://www.instagram.com/"#}
+{#                               style="text-decoration:none;color: black; margin-left: 6px">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-instagram" viewBox="0 0 16 16">#}
+{#                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                            <a href="https://www.youtube.com/"#}
+{#                               style="text-decoration:none;color: black; margin-left: 6px">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-youtube" viewBox="0 0 16 16">#}
+{#                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                            <a href="https://www.github.com/"#}
+{#                               style="text-decoration:none;color: black;margin-left: 6px">#}
+{#                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"#}
+{#                                     class="bi bi-github" viewBox="0 0 16 16">#}
+{#                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>#}
+{#                                </svg>#}
+{#                            </a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{##}
+{#        <h1 class="display-5 mt-5"><b>Sertifikat</b></h1>#}
+{#        <div class="mt-5">#}
+{#            <img width="60%" src="{% static 'images/Desktop%20-%201%201.png' %}">#}
+{#            <div style="margin-left: 43rem;margin-top: -19rem;">#}
+{#                <h4><b>+200 o’quvchilar bizga ishonishgan</b></h4>#}
+{#                <p style="width: 26rem;" class="card-text mt-3"> Kursni tamomlagan talabalarning o’zlashtirish#}
+{#                    ko’rsatkichi#}
+{#                    e’tiborga olingan holda sertifikatlar beriladi.#}
+{##}
+{#            </div>#}
+{##}
+{#        </div>#}
+{#        <div>#}
+{#            <div style="border-top: 1.5px solid #edeceb;border-bottom: 1.5px solid #edeceb;height: 300px;margin-top: 250px">#}
+{#                <div class="container">#}
+{#                    <div class="row mt-5">#}
+{#                        <div class="col-4">#}
+{#                            <p style="font-size:15px;font-family: 'Nunito Sans', sans-serif;">#}
+{#                                Neumorphism UI PRO is a premium Bootstrap UI <br> Kit built based on the newest design#}
+{#                                trend#}
+{#                                called#}
+{#                                <br> Neumorphism.#}
+{#                            </p>#}
+{#                            <a href=""><img src="{% static 'images/Vector.jpg' %}" alt=""></a>#}
+{#                            <a href=""> <img src="{% static 'images/Vector%20(1).jpg' %}" alt=""#}
+{#                                             style="margin-left: 20px"></a>#}
+{#                            <a href=""><img src="x{% static 'img/Desktop%20-%201%201.png' %}" alt=""#}
+{#                                            style="margin-left: 20px"></a>#}
+{#                        </div>#}
+{#                        <div class="col-2">#}
+{#                            <h5>Webbrain</h5>#}
+{#                            <ul style=" list-style-type: none;padding:0">#}
+{#                                <a href="" style="color: black;text-decoration: none">#}
+{#                                    <li class="mt-4">Team</li>#}
+{#                                </a>#}
+{#                                <a href="" style="color: black;text-decoration: none">#}
+{#                                    <li class="mt-4">Partners</li>#}
+{#                                    <a href="" style="color: black;text-decoration: none">#}
+{#                                        <li class="mt-4">Lessons</li>#}
+{#                                    </a>#}
+{#                                    <a href="" style="color: black;text-decoration: none">#}
+{#                                        <li class="mt-4">About us</li>#}
+{#                                    </a>#}
+{#                            </ul>#}
+{#                        </div>#}
+{#                        <div class="col-2">#}
+{#                            <h5>Others</h5>#}
+{#                            <ul style=" list-style-type: none;padding:0">#}
+{#                                <a href="" style="color: black;text-decoration: none">#}
+{#                                    <li class="mt-4">Docs</li>#}
+{#                                </a>#}
+{#                                <a href="" style="color: black;text-decoration: none">#}
+{#                                    <li class="mt-4">Changelog</li>#}
+{#                                </a>#}
+{#                                <a href="" style="color: black;text-decoration: none">#}
+{#                                    <li class="mt-4">Licence</li>#}
+{#                                </a>#}
+{#                                <a href="" style="color: black;text-decoration: none">#}
+{#                                    <li class="mt-4">Support</li>#}
+{#                                </a>#}
+{##}
+{#                            </ul>#}
+{#                        </div>#}
+{#                        <div class="col-4">#}
+{#                            <h5>Others</h5>#}
+{#                            <p style="font-size: 16px">#}
+{#                                Join our mailing list. We write rarely, but only <br> the best content#}
+{#                            </p>#}
+{#                            <div class="form-group">#}
+{#                                <input type="email" class="form-control" id="exampleFormControlInput6"#}
+{#                                       placeholder="Email manzilingiz"#}
+{#                                       style="width: 321px;height: 48px; border-radius: 8px;border: 1px solid #edeceb">#}
+{#                            </div>#}
+{#                            <button type="button" class="btn btn-primary "#}
+{#                                    style="width:90%; box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Yuborish#}
+{#                            </button>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="mt-5" style="text-align: center">#}
+{#            <a class="navbar-brand" href="#"><h1 style="font-family: 'Fira Code', monospace;color: black"><span#}
+{#                    style="color:#0076F5;">web</span>brain</h1></a>#}
+{#            <p style="color: black;font-size: 15px">Copyrigth &copy; Webbrain 2021. All rights reserved</p>#}
+{#        </div>#}
+{##}
+{#    </div>#}
+{#    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"#}
+{#            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"#}
+{#            crossorigin="anonymous"></script>#}
+{#    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"#}
+{#            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"#}
+{#            crossorigin="anonymous"></script>#}
+{#</body>#}
+{#</html>#}

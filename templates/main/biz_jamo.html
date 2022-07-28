@@ -14,7 +14,8 @@
         .a {
             text-decoration: none;
         }
-        .box-card{
+
+        .box-card {
             border-radius: 10px
         }
     </style>
@@ -44,19 +45,28 @@
 
         </div>
         <div style="margin-top: -2rem">
-            <div class="card mb-3" style= "max-width: 540px;border: 0px solid red;width: 900px;  margin: 0 0 0 320px; height: 50px;     background-color: #F5FAFF; ">
+            <div class="card mb-3"
+                 style="max-width: 540px;border: 0px solid red;width: 900px;  margin: 0 0 0 320px; height: 50px;     background-color: #F5FAFF; ">
                 <div class="row no-gutters">
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">{{ tim.sohasi }}</h5>
                             <p style="    width: 503px;" class="card-text">{{ tim.text }}</p>
 
                         </div>
                     </div>
                 </div>
             </div>
-            <h2 style="margin-left: 6rem;font-size: 25px;margin-top: 9rem">{{ tim.job }}</h2>
-            <h3 style="margin-left: 7.5rem;font-size: 19px;color: #514D48;">{{ tim.sohasi }}</h3>
+            <div>
+                <div style="
+    margin-left: 20rem;margin-top: 11rem">
+                    <button type="button" class="btn btn-link">{{ tim.tag }} </button>
+                </div>
+            </div>
+            <div >
+                <h2 style="margin-left: 7rem;font-size: 25px;margin-top: -4rem">{{ tim.name }}</h2>
+                <h3 style="margin-left: 6rem;font-size: 19px;color: #514D48;">{{ tim.job }}</h3>
+            </div>
             <div style="margin-left: 120px;margin-top: 1.5rem">
                 <a class="a" href=""><img src="{% static 'images/fesbook.png' %}" alt=""></a>
                 <a class="a" style="margin-left: 0.5rem" href=""><img src="{% static 'images/instagram.png' %}" alt=""></a>
@@ -65,32 +75,9 @@
                 <a class="a" style="margin-left: 0.5rem" href=""><img src="{% static 'images/github.png' %}" alt=""></a>
             </div>
         </div>
-        <div>
-            <div style="
-    margin-left: 20rem;
-    margin-top: -2.5rem;">
-                <button type="button" class="btn btn-link">#html</button>
-                <button type="button" class="btn btn-link">#css</button>
-                <button type="button" class="btn btn-link">#bootstrap</button>
-                <button type="button" class="btn btn-link">#sass</button>
-                <button type="button" class="btn btn-link">#javascript</button>
-                <button type="button" class="btn btn-link">#reactjs</button>
-                <button type="button" class="btn btn-link">#angular</button>
-                <button type="button" class="btn btn-link">#nodejs</button>
-                <button type="button" class="btn btn-link">#github</button>
-            </div>
-        </div>
     </div>
 {% endfor %}
 <!--kart tugadi-1-->
-
-
-
-
-
-
-
-
 
 
 <br><br><br>
@@ -170,13 +157,15 @@
 
 <div class="row">
     <div style="margin-left: 133px">
-        <a style="text-decoration: none" class="a" href="https://www.facebook.com/campaign/landing.php?campaign_id=11554070363&extra_1=s%7Cc%7C477437435741%7Ce%7Cfacebook%7C&placement=&creative=477437435741&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D11554070363%26adgroupid%3D112923417056%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2FoEdP7siRbNRh3AXFI3REeH0MEyJANP3xzZ72KnD_MLn-eW-hHz-gaAgnvEALw_wcB">
+        <a style="text-decoration: none" class="a"
+           href="https://www.facebook.com/campaign/landing.php?campaign_id=11554070363&extra_1=s%7Cc%7C477437435741%7Ce%7Cfacebook%7C&placement=&creative=477437435741&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D11554070363%26adgroupid%3D112923417056%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2FoEdP7siRbNRh3AXFI3REeH0MEyJANP3xzZ72KnD_MLn-eW-hHz-gaAgnvEALw_wcB">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                  class="bi bi-facebook" viewBox="0 0 16 16">
                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
             </svg>
         </a>
-        <a class="a" href="https://myaccount.google.com/?utm_source=account-marketing-page&utm_medium=go-to-account-button&pli=1"
+        <a class="a"
+           href="https://myaccount.google.com/?utm_source=account-marketing-page&utm_medium=go-to-account-button&pli=1"
            style="margin-left: 10px;text-decoration: none">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                  class="bi bi-google" viewBox="0 0 16 16">

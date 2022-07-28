@@ -33,74 +33,47 @@
 
 <div class="container">
     <div class="row">
-        <div class="container mt-5 col-3">
-            <div class="card"
-                 style="width: 20rem; box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15); border-radius: 3%;background-color: #F5FAFF">
-                <img src="{% static 'images/android.png' %}" class="card-img-top mt-3" alt="..."
-                     style="height: 106px;width: 112px;border-radius: 50%;margin-left: 102px;">
-                <div class="card-body" style="text-align: center">
-                    <h6 class="card-title" style="font-size: 22px;">Mobile Bootcamp</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dignissimos</p>
-                    <a href="{% url 'course_lesson' %}">
-                        <button type="button" class="btn btn-outline-primary"
-                                style="width: 158px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Batafsil
-                        </button>
-                    </a>
+        {% for i in course %}
+            {% if i.price == True %}
+                <div class="container mt-5 col-3">
+                    <div class="card"
+                         style="width: 20rem; box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15); border-radius: 3%;background-color: #F5FAFF">
+                        <img src="{% static 'images/android.png' %}" class="card-img-top mt-3" alt="..."
+                             style="height: 106px;width: 112px;border-radius: 50%;margin-left: 102px;">
+                        <div class="card-body" style="text-align: center">
+                            <h6 class="card-title" style="font-size: 22px;">{{ i.name }}</h6>
+                            <p class="card-text">{{ i.text }}</p>
+                            <a href="{% url 'course_lesson' %}">
+                                <button type="button" class="btn btn-outline-primary"
+                                        style="width: 158px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Batafsil
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="container mt-5 col-3 ">
-            <div class="card"
-                 style="width: 20rem; box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15);border-radius: 3%;background-color: #F5FAFF">
-                <img src="{% static 'images/frontend.png' %}" class="card-img-top mt-3" alt="..."
-                     style="height: 106px;width: 112px;border-radius: 50%;margin-left: 102px;">
-                <div class="card-body" style="text-align: center">
-                    <h6 class="card-title" style="font-size: 22px;">Frontend Bootcamp</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dignissimos</p>
-                    <a href="">
-                        <button type="button" class="btn btn-outline-primary"
-                                style="width: 158px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Batafsil
-                        </button>
-                    </a>
+            {% elif i.price == False %}
+                <div class="container mt-5 col-3">
+                    <div class="card"
+                         style="width: 20rem; box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15); border-radius: 3%;background-color: #F5FAFF">
+                        <img src="{% static 'images/android.png' %}" class="card-img-top mt-3" alt="..."
+                             style="height: 106px;width: 112px;border-radius: 50%;margin-left: 102px;">
+                        <div class="card-body" style="text-align: center">
+                            <h6 class="card-title" style="font-size: 22px;">{{ i.name }}</h6>
+                            <p class="card-text">{{ i.text }}</p>
+                            <a href="{% url 'tulov' %}">
+                                <button type="button" class="btn btn-outline-danger"
+                                        style="width: 158px;box-shadow: 4px 8px 16px rgba(245,0,8,0.4);">Sotib olish
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="container mt-5 col-3">
-            <div class="card"
-                 style="width: 20rem; box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15);  border-radius: 3%;background-color: #F5FAFF ">
-                <img src="{% static 'images/backend.png' %}" class="card-img-top mt-3" alt="..."
-                     style="height: 106px;width: 112px;border-radius: 50%;margin-left: 102px;">
-                <div class="card-body" style="text-align: center">
-                    <h6 class="card-title" style="font-size: 22px;">Backend Bootcamp</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dignissimos</p>
-                    <a href="">
-                        <button type="button" class="btn btn-outline-primary"
-                                style="width: 158px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Batafsil
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
+            {% endif %}
+        {% endfor %}
     </div>
 </div>
 
 
-<div class="mt-5 " style="margin-left: 167px;">
-    <div class="card"
-         style="width: 20rem; box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15);border-radius: 3%;background-color: #F5FAFF">
-        <img src="{%  static 'images/frontend.png' %}" class="card-img-top mt-3" alt="..."
-             style="height: 106px;width: 112px;border-radius: 50%;margin-left: 102px;">
-        <div class="card-body" style="text-align: center">
-            <h6 class="card-title" style="font-size: 22px;">Frontend Bootcamp</h6>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dignissimos</p>
-            <a href="">
-                <button type="button" class="btn btn-outline-primary"
-                        style="width: 158px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Batafsil
-                </button>
-            </a>
-        </div>
-    </div>
-</div>
 
 <br><br><br>
 <hr>

@@ -34,134 +34,30 @@
 
 <div class="container">
     <div class="row">
-        <div class="container mt-4 col-3">
-            <div class="card" style="width: 100%;padding:10px; border-radius: 8px; box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);  ">
-                <img src="{% static 'images/code_html.jpg' %}" class="card-img-top" alt="..." style="border-radius: 7px;height: 155px">
-                <div class="card-body">
-                    <div style="text-align: center;">
-                        <h5 class="card-title">Backend Bootcamp</h5>
-                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue
-                            turpis curabitur et vitae at et, sit.</p>
-                        <button type="button" class="btn btn-outline-primary"
-                                style="width: 195px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Kurish
-                        </button>
+        {% for i in lesson %}
+            {% if i.price == True %}
+                <div class="container mt-4 col-3">
+                    <div class="card"
+                         style="width: 100%;padding:10px; border-radius: 8px; box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);  ">
+                        <img src="{% static 'images/code_html.jpg' %}" class="card-img-top" alt="..."
+                             style="border-radius: 7px;height: 155px">
+                        <div class="card-body">
+                            <div style="text-align: center;">
+                                <h5 class="card-title">{{ i.name }}</h5>
+                                <p class="card-text">{{ i.text }}</p>
+                                <a href="{% url 'course_video' i.id %}">
+                                    <button type="button" class="btn btn-outline-primary"
+                                            style="width: 195px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Kurish
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container mt-4 col-3">
-            <div class="card" style="width: 100%;padding:10px; border-radius: 8px">
-                <img src="{% static 'images/code_nimadir.jpg' %}" class="card-img-top" alt="..." style="border-radius: 7px;height: 155px">
-                <div class="card-body">
-                    <div style="text-align: center;">
-                        <h5 class="card-title">Frontend Bootcamp</h5>
-                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue
-                            turpis curabitur et vitae at et, sit.</p>
-                        <button type="button" class="btn btn-outline-primary"
-                                style="width: 195px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Kurish
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-4 col-3">
-            <div class="card" style="width: 100%;padding:10px; border-radius: 8px">
-                <img src="{%  static 'images/code_123_html.jpg' %}" class="card-img-top" alt="..." style="border-radius: 7px;height: 155px">
-                <div class="card-body">
-                    <div style="text-align: center;">
-                        <h5 class="card-title">Backend Bootcamp</h5>
-                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue
-                            turpis curabitur et vitae at et, sit.</p>
-                        <button type="button" class="btn btn-outline-primary"
-                                style="width: 195px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Kurish
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-4 col-3">
-            <div class="card" style="position:absolute;width: 94%;padding:10px; border-radius: 8px">
-                <img src="{%  static 'images/code_blue.jpg' %}" class="card-img-top" alt="..." style="border-radius: 7px;height: 155px">
-                <div class="card-body">
-                    <div style="text-align: center;">
-                        <h5 class="card-title">Backend Bootcamp</h5>
-                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue
-                            turpis curabitur et vitae at et, sit.</p>
-                        <button type="button" class="btn btn-outline-primary"
-                                style="width: 195px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Kurish
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+            {% endif %}
+        {% endfor %}
     </div>
 </div>
-
-<div class="container">
-    <div class="row">
-        <div class="container mt-4 col-3">
-            <div class="card" style="width: 100%;padding:10px; border-radius: 8px; box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);  ">
-                <img src="{% static 'images/code_html.jpg' %}" class="card-img-top" alt="..." style="border-radius: 7px;height: 155px">
-                <div class="card-body">
-                    <div style="text-align: center;">
-                        <h5 class="card-title">Backend Bootcamp</h5>
-                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue
-                            turpis curabitur et vitae at et, sit.</p>
-                        <button type="button" class="btn btn-outline-primary"
-                                style="width: 195px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Kurish
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-4 col-3">
-            <div class="card" style="width: 100%;padding:10px; border-radius: 8px">
-                <img src="{%  static 'images/code_nimadir.jpg' %}" class="card-img-top" alt="..." style="height: 155px;border-radius: 7px">
-                <div class="card-body">
-                    <div style="text-align: center;">
-                        <h5 class="card-title">Frontend Bootcamp</h5>
-                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue
-                            turpis curabitur et vitae at et, sit.</p>
-                        <button type="button" class="btn btn-outline-primary"
-                                style="width: 195px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Kurish
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-4 col-3">
-            <div class="card" style="width: 100%;padding:10px; border-radius: 8px">
-                <img src="{% static 'images/code_123_html.jpg' %}" class="card-img-top" alt="..." style="height: 155px;border-radius: 7px">
-                <div class="card-body">
-                    <div style="text-align: center;">
-                        <h5 class="card-title">Backend Bootcamp</h5>
-                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue
-                            turpis curabitur et vitae at et, sit.</p>
-                        <button type="button" class="btn btn-outline-primary"
-                                style="width: 195px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Kurish
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-4 col-3">
-            <div class="card" style="position:absolute;width: 94%;padding:10px; border-radius: 8px">
-                <img src="x{% static 'images/code_123_html.jpg' %}" class="card-img-top" alt="..." style="height: 155px;border-radius: 7px">
-                <div class="card-body">
-                    <div style="text-align: center;">
-                        <h5 class="card-title">Backend Bootcamp</h5>
-                        <p class="card-text">Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue
-                            turpis curabitur et vitae at et, sit.</p>
-                        <button type="button" class="btn btn-outline-primary"
-                                style="width: 195px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Kurish
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 <br><br><br>
 <hr>

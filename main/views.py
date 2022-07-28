@@ -1,10 +1,16 @@
 from django.shortcuts import render
 from main.models import *
 
+
 def index(requesrt):
     statictika = Statika.objects.all()
-
+    bizningjamoa = Team.objects.all()
+    course = Coueres.objects.all()
+    lesson = Coueres.objects.all()
     ctx = {
+        "lesson": lesson,
+        "course": course,
+        "bizningjamoa": bizningjamoa,
         "statictika": statictika
 
     }
@@ -12,22 +18,42 @@ def index(requesrt):
 
 
 def course(requesrt):
-    return render(requesrt, 'main/kurslar.html')
+    course = Coueres.objects.all()
+
+    ctx = {
+        "course": course
+    }
+    return render(requesrt, 'main/kurslar.html', ctx)
 
 
 def course_lesson(request):
-    return render(request, 'main/kurs_dars.html')
+    lesson = Coueres.objects.all()
+
+    ctx = {
+        "lesson": lesson
+    }
+    return render(request, 'main/kurs_dars.html', ctx)
+
+
+def course_video(request, id):
+    vedio = Coueres.objects.filter(id=id)
+    ctx = {
+        "vedio": vedio
+    }
+    return render(request, 'main/dars.html', ctx)
 
 
 def rayteng(request):
     student = Team_bola.objects.all()
 
-    ctx={
-        "student":student
+    ctx = {
+        "student": student
     }
-    return render(request, 'main/natija.html',ctx)
+    return render(request, 'main/natija.html', ctx)
 
 
+def tulov(request):
+    return render(request, "main/to'lov.html")
 
 
 def our_team(request):
@@ -50,7 +76,6 @@ def sign_in(request):
 
 def lesson(request):
     return render(request, 'main/dars.html')
-
 
 
 def hello(request):
