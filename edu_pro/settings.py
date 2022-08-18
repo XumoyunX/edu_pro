@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'client',
-    # 'csrf_token'
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [

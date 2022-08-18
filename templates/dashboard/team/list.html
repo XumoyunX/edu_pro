@@ -1,0 +1,117 @@
+{% include 'dashboard/base.html' %}
+{% load static %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+<div class="content-wrapper">
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Bizning Jamoa</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="{% url 'index' %}">Saytga oʻtish</a></li>
+                        <li class="breadcrumb-item active">Bizning Jamoa</li>
+                    </ol>
+                </div>
+            </div>
+
+        </div><!-- /.container-fluid -->
+    </section>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-primary">
+                        <div class="container">
+                            <div class="ml-auto" style="display: flex;justify-content: left">
+                                <a class="nav-link active ml-auto" href="{% url 'client:team_create' %}">
+                                    <button type="button" class="btn btn-primary" style="padding: 0px 6px "><b><i
+                                            class="bi bi-plus"
+                                            style="font-size:25px;"></i></b>
+                                    </button>
+                                </a>
+                            </div>
+
+                            {% for tim in student %}
+
+                                <div style="display: flex;justify-content: center;">
+
+                                    <div class="box-card" style="
+    width: 55rem;
+    height: 480px;
+    box-shadow: 0px 0px 30px -18px;margin-top: 96px">
+                                        <div class="ml-auto" style="display:-webkit-inline-box;">
+                                            <a class="nav-link active ml-auto" href="#">
+                                                <button type="button" class="btn btn-success"
+                                                        style="padding: 5px 20px "><i
+                                                        class="bi bi-pen"></i>
+                                                </button>
+                                            </a>
+                                            <a class="nav-link active ml-auto" href="#">
+                                                <button type="button" class="btn btn-danger" style="padding: 5px 20px ">
+                                                    <i
+                                                            class="bi bi-trash"></i>
+                                                </button>
+                                            </a>
+
+                                        </div>
+                                        <div>
+                                            <img class="rounded-circle"
+                                                 style=" margin-top: 90px;margin-left: 104px;height: 9rem; width: 10rem; "
+                                                 src="{{ tim.img.url }}" alt="">
+                                            <div style="margin-left: 21rem;margin-top: -9.3rem;font-size: 19px;">
+
+
+                                            </div>
+                                            <div style="margin-top: -2rem">
+                                                <div class="card mb-3"
+                                                     style="max-width: 540px;border: 0px solid red;width: 900px;  margin: 0 0 0 320px; height: 50px;     background-color: #F5FAFF; ">
+                                                    <div class="row no-gutters">
+                                                        <div class="col-md-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">{{ tim.sohasi }}</h5>
+                                                                <p style="    width: 503px;"
+                                                                   class="card-text">{{ tim.text }}</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div style="
+    margin-left: 20rem;margin-top: 11rem">
+                                                        <button type="button"
+                                                                class="btn btn-link">{{ tim.tag }} </button>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h2 style="margin-left: 7rem;font-size: 25px;margin-top: -4rem">{{ tim.name }}</h2>
+                                                    <h3 style="margin-left: 6rem;font-size: 19px;color: #514D48;">{{ tim.job }}</h3>
+                                                </div>
+                                                <div style="margin-left: 120px;margin-top: 1.5rem">
+                                                    <a class="a" href=""><img src="{% static 'images/fesbook.png' %}"
+                                                                              alt=""></a>
+                                                    <a class="a" style="margin-left: 0.5rem" href=""><img
+                                                            src="{% static 'images/instagram.png' %}"
+                                                            alt=""></a>
+                                                    <a class="a" style="margin-left: 0.5rem" href=""><img
+                                                            src="{% static 'images/youtube.png' %}"
+                                                            alt=""></a>
+                                                    <a class="a" style="margin-left: 0.5rem" href=""><img
+                                                            src="{% static 'images/github.png' %}" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

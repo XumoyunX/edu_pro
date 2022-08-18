@@ -1,0 +1,111 @@
+{% include 'dashboard/base.html' %}
+{% load static %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<div class="content-wrapper">
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Kurslar</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="{% url 'index' %}">Saytga oʻtish</a></li>
+                        <li class="breadcrumb-item active">Kurslar</li>
+                    </ol>
+                </div>
+            </div>
+
+        </div><!-- /.container-fluid -->
+    </section>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-primary">
+                        <div class="container">
+                            <div class="ml-auto" style="display: flex;justify-content: left">
+                                <a class="nav-link active ml-auto" href="{% url 'client:courses_create' %}">
+                                    <button type="button" class="btn btn-primary" style="padding: 0px 6px "><b><i
+                                            class="bi bi-plus"
+                                            style="font-size:25px;"></i></b>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="row">
+                                {% for i in course %}
+                                    {% if i.price == True %}
+                                        <div class="container mt-5 col-3">
+                                            <div class="card"
+                                                 style="border:1px solid #F5FAFF;margin-left: -50px;width: 20rem; box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.65); border-radius: 3%;background-color: #F5FAFF">
+                                                <div>
+                                                    <a href="{% url 'client:courses_edit' i.id%}">
+                                                        <button type="button" class="btn btn-success"><i class="bi bi-pen"></i>
+                                                        </button>
+                                                    </a>
+                                                    <a href="{% url 'client:courses_delete' i.id %}">
+                                                        <button type="button" class="btn btn-danger"><i
+                                                                class="bi bi-trash"></i>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                                <img src="{% static 'images/android.png' %}" class="card-img-top mt-3"
+                                                     alt="..."
+                                                     style="height: 106px;width: 112px;border-radius: 50%;margin-left: 102px;">
+                                                <div class="card-body" style="text-align: center">
+                                                    <h6 class="card-text" style="font-size: 22px;">{{ i.name }}</h6>
+                                                    <p class="card-text">{{ i.text }}</p>
+                                                    <a href="{% url 'course_lesson' %}">
+                                                        <button type="button" class="btn btn-outline-primary"
+                                                                style="width: 158px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">
+                                                            Batafsil
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% elif i.price == False %}
+                                        <div class="container mt-5 col-3">
+                                            <div class="card"
+                                                 style="margin-left:-50px;width: 20rem; box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.65); border-radius: 3%;background-color: #F5FAFF">
+                                                 <div style="padding: 10px !important;">
+                                                    <a href="{% url 'client:courses_edit' i.id%}">
+                                                        <button type="button" class="btn btn-success"><i
+                                                                class="bi bi-pen"></i><span
+                                                                style="font-family: sans-serif">Tahrirlash</span>
+                                                        </button>
+                                                    </a>
+                                                    <a href="{% url 'client:courses_delete' i.id %}">
+                                                        <button type="button" class="btn btn-danger"><i
+                                                                class="bi bi-trash"
+                                                                style="margin-left: -9px;margin-right: 7px;"></i>O'chirish
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                                <img src="{% static 'images/android.png' %}" class="card-img-top mt-3"
+                                                     alt="..."
+                                                     style="height: 106px;width: 112px;border-radius: 50%;margin-left: 102px;">
+                                                <div class="card-body" style="text-align: center">
+                                                    <h6 class="card-text" style="font-size: 22px;">{{ i.name }}</h6>
+                                                    <p class="card-text">{{ i.text }}</p>
+                                                    <a href="{% url 'tulov' %}">
+                                                        <button type="button" class="btn btn-outline-danger"
+                                                                style="width: 158px;box-shadow: 6px 8px 16px rgba(245,0,8,0.4);">
+                                                            Sotib olish
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

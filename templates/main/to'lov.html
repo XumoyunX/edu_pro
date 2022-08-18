@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,20 +32,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:110px">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" style="font-family: 'Inter', sans-serif;">Asosiy       </a>
+                    <a class="nav-link" href="{% url 'index' %}" style="font-family: 'Inter', sans-serif;">Asosiy       </a>
 
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" style="font-family: 'Inter', sans-serif;">Kurslarimiz       </a>
+                    <a class="nav-link" href="{% url 'course' %}" style="font-family: 'Inter', sans-serif;">Kurslarimiz       </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" style="font-family: 'Inter', sans-serif;">Natijalar       </a>
+                    <a class="nav-link" href="{%  url 'rayteng' %}" style="font-family: 'Inter', sans-serif;">Natijalar       </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" style="font-family: 'Inter', sans-serif;">Bizning jamoa      </a>
+                    <a class="nav-link" href="{% url 'our_team' %}" style="font-family: 'Inter', sans-serif;">Bizning jamoa      </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#" style="font-family: 'Inter', sans-serif;">Youtube</a>
+                    <a class="nav-link" href="https://youtube.com" style="font-family: 'Inter', sans-serif;">Youtube</a>
                 </li>
             </ul>
         </div>
@@ -157,9 +158,9 @@
                     Neumorphism UI PRO is a premium Bootstrap UI <br> Kit built based on the newest design trend called
                     <br> Neumorphism.
                 </p>
-                <a href=""><img src="./images/Vector.jpg" alt=""></a>
-                <a href="">  <img src="./images/Vector%20(1).jpg" alt="" style="margin-left: 20px"></a>
-                <a href=""><img src="./images/Vector%20(1).png" alt="" style="margin-left: 20px"></a>
+               <a href=""><img src="{% static './images/Vector.jpg' %}" alt=""></a>
+                <a href="">  <img src="{% static './images/Vector%20(1).jpg' %}" alt="" style="margin-left: 20px"></a>
+                <a href=""><img src="{%  static './images/Vector%20(1).png' %}" alt="" style="margin-left: 20px"></a>
             </div>
             <div class="col-2">
                 <h5>Webbrain</h5>
