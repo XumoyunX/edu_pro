@@ -1,0 +1,62 @@
+{% include 'dashboard/base.html' %}
+<div class="content-wrapper">
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Statistika</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="{% url 'index' %}">Saytga oʻtish</a></li>
+                        <li class="breadcrumb-item active">Statistika</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-primary">
+
+                        <form method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label>Kurslar soni :</label>
+                                    {{ form.kurslar_soni }}
+                                </div>
+                                <div class="form-group">
+                                    <label>O'quvchilar soni:</label>
+                                    {{ form.uquvchilar_soni }}
+                                </div>
+                                <div class="form-group">
+                                    <label>Ishga joylashganlar</label>
+                                    {{ form.ishga_joylashganlar }}
+                                </div>
+                                <div class="form-group">
+                                    <label>Mentorlar</label>
+                                    {{ form.mentorlar }}
+                                </div>
+                                <div class="form-group">
+                                    <label>Jamoa a'zosi ishi</label>
+                                    {{ form.job }}
+                                </div>
+                                <div class="form-group">
+                                    <label>Jamoa a'zosining tag</label>
+                                    {{ form.tag }}
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-primary">Saqlash</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

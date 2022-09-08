@@ -1,0 +1,148 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .card {
+            border: none;
+        }
+
+    </style>
+</head>
+<body style="background-color: #F5FAFF">
+
+{% include 'main/navbar.html' %}
+
+
+<div>
+    <h1 style="text-align: center; font-family: 'Fira Code'"><span style="color: #0076F5">WebBrain</span> akademiyasi
+        tomonidan <br> taklif etilayotgan <span style="color: #0076F5"> kurslar ro’yxati </span>
+    </h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        {% for i in course %}
+            {% if i.price == True %}
+                <div class="container mt-4 col-3">
+                    <div class="card"
+                         style="width: 100%;padding:10px; border-radius: 8px; box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);  ">
+                        <img src="{{ i.img.url }}" class="card-img-top" alt="..."
+                             style="border-radius: 7px;height: 155px">
+                        <div class="card-body">
+                            <div style="text-align: center;">
+                                <h5 class="card-title">{{ i.name }}</h5>
+                                <p class="card-text">{{ i.text }}</p>
+                                <a href="{% url 'course_video' i.id %}">
+                                    <button type="button" class="btn btn-outline-primary"
+                                            style="width: 195px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Kurish
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% elif i.price == False %}
+                <div class="container mt-4 col-3">
+                    <div class="card"
+                         style="width: 100%;padding:10px; border-radius: 8px; box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.4);  ">
+                        <img src="{{ i.img.url }}" class="card-img-top" alt="..."
+                             style="border-radius: 7px;height: 155px">
+                        <div class="card-body">
+                            <div style="text-align: center;">
+                                <h5 class="card-title">{{ i.name }}</h5>
+                                <p class="card-text">{{ i.text }}</p>
+                                <a href="{% url 'tulov' %}">
+                                    <button type="button" class="btn btn-outline-danger"
+                                            style="width: 195px;box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Sotib Olish
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+
+
+<br><br><br>
+<hr>
+<br>
+
+<div style="border-top: 1.5px solid #edeceb;border-bottom: 1.5px solid #edeceb;height: 300px;margin-top: 100px">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-4">
+                <p style="font-size:15px;font-family: 'Nunito Sans', sans-serif;">
+                    Neumorphism UI PRO is a premium Bootstrap UI <br> Kit built based on the newest design trend called
+                    <br> Neumorphism.
+                </p>
+               <a href=""><img src="{% static './images/Vector.jpg' %}" alt=""></a>
+                <a href="">  <img src="{% static './images/Vector%20(1).jpg' %}" alt="" style="margin-left: 20px"></a>
+                <a href=""><img src="{%  static './images/Vector%20(1).png' %}" alt="" style="margin-left: 20px"></a>
+            </div>
+            <div class="col-2">
+                <h5>Webbrain</h5>
+                <ul style=" list-style-type: none;padding:0">
+                    <a href="" style="color: black;text-decoration: none"><li class="mt-4">Team</li></a>
+                    <a href="" style="color: black;text-decoration: none"><li class="mt-4">Partners</li>
+                        <a href="" style="color: black;text-decoration: none"><li class="mt-4">Lessons</li></a>
+                        <a href="" style="color: black;text-decoration: none"><li class="mt-4">About us</li></a>
+                </ul>
+            </div>
+            <div class="col-2">
+                <h5>Others</h5>
+                <ul style=" list-style-type: none;padding:0">
+                    <a href="" style="color: black;text-decoration: none"><li class="mt-4">Docs</li></a>
+                    <a href="" style="color: black;text-decoration: none"><li class="mt-4">Changelog</li></a>
+                    <a href="" style="color: black;text-decoration: none"><li class="mt-4">Licence</li></a>
+                    <a href="" style="color: black;text-decoration: none"><li class="mt-4">Support</li></a>
+
+                </ul>
+            </div>
+            <div class="col-4">
+                <h5>Others</h5>
+                <p style="font-size: 16px">
+                    Join our mailing list. We write rarely, but only <br> the best content
+                </p>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleFormControlInput6"
+                           placeholder="Email manzilingiz"
+                           style="width: 321px;height: 48px; border-radius: 8px;border: 1px solid #edeceb">
+                </div>
+                <button type="button" class="btn btn-primary "
+                        style="width:90%; box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);">Yuborish
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mt-5" style="text-align: center">
+    <a class="navbar-brand" href="#"><h1 style="font-family: 'Fira Code', monospace;color: black"><span
+            style="color:#0076F5;">web</span>brain</h1></a>
+    <p style="color: black;font-size: 15px">Copyrigth &copy; Webbrain 2021. All rights reserved</p>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+</html>
